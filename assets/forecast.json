@@ -1,0 +1,817 @@
+{
+  "title": "Cumulative forecast rainfall",
+  "model": "WRF prototype",
+  "forecastRunUtc": "2026-04-11T12:00:00Z",
+  "forecastRunNz": "2026-04-12T00:00:00+12:00",
+  "timeStatus": "Hr1 treated as T+0 pending confirmation",
+  "unitsStatus": "Millimetres assumed pending confirmation",
+  "variable": "cumulative_forecast_rainfall",
+  "units": "mm",
+  "coordinates": [
+    [
+      171.18507033577578,
+      -33.496536425276716
+    ],
+    [
+      179.8756588283016,
+      -33.496536425276716
+    ],
+    [
+      179.8756588283016,
+      -42.73601147422671
+    ],
+    [
+      171.18507033577578,
+      -42.73601147422671
+    ]
+  ],
+  "grid": {
+    "width": 174,
+    "height": 246,
+    "xMin": 1451400.0,
+    "yMax": 6277100.0,
+    "cellSize": 4100.0,
+    "noDataCode": 65535,
+    "valueScale": 10,
+    "epsg": 2193
+  },
+  "maximumMm": 296.2,
+  "displayScaleMaxMm": 300,
+  "displayStopsMm": [
+    0,
+    50,
+    100,
+    150,
+    200,
+    250,
+    300
+  ],
+  "dataVersion": "web-mercator-aligned-v1",
+  "frames": [
+    {
+      "leadHour": 0,
+      "sourceHour": "Hr1",
+      "validTimeUtc": "2026-04-11T12:00:00Z",
+      "validTimeNz": "2026-04-12T00:00:00+12:00",
+      "path": "assets/frames/rain-000.png",
+      "valuesPath": "assets/values/rain-000.bin",
+      "maximumMm": 0.0
+    },
+    {
+      "leadHour": 1,
+      "sourceHour": "Hr2",
+      "validTimeUtc": "2026-04-11T13:00:00Z",
+      "validTimeNz": "2026-04-12T01:00:00+12:00",
+      "path": "assets/frames/rain-001.png",
+      "valuesPath": "assets/values/rain-001.bin",
+      "maximumMm": 20.1
+    },
+    {
+      "leadHour": 2,
+      "sourceHour": "Hr3",
+      "validTimeUtc": "2026-04-11T14:00:00Z",
+      "validTimeNz": "2026-04-12T02:00:00+12:00",
+      "path": "assets/frames/rain-002.png",
+      "valuesPath": "assets/values/rain-002.bin",
+      "maximumMm": 39.7
+    },
+    {
+      "leadHour": 3,
+      "sourceHour": "Hr4",
+      "validTimeUtc": "2026-04-11T15:00:00Z",
+      "validTimeNz": "2026-04-12T03:00:00+12:00",
+      "path": "assets/frames/rain-003.png",
+      "valuesPath": "assets/values/rain-003.bin",
+      "maximumMm": 49.1
+    },
+    {
+      "leadHour": 4,
+      "sourceHour": "Hr5",
+      "validTimeUtc": "2026-04-11T16:00:00Z",
+      "validTimeNz": "2026-04-12T04:00:00+12:00",
+      "path": "assets/frames/rain-004.png",
+      "valuesPath": "assets/values/rain-004.bin",
+      "maximumMm": 60.4
+    },
+    {
+      "leadHour": 5,
+      "sourceHour": "Hr6",
+      "validTimeUtc": "2026-04-11T17:00:00Z",
+      "validTimeNz": "2026-04-12T05:00:00+12:00",
+      "path": "assets/frames/rain-005.png",
+      "valuesPath": "assets/values/rain-005.bin",
+      "maximumMm": 79.2
+    },
+    {
+      "leadHour": 6,
+      "sourceHour": "Hr7",
+      "validTimeUtc": "2026-04-11T18:00:00Z",
+      "validTimeNz": "2026-04-12T06:00:00+12:00",
+      "path": "assets/frames/rain-006.png",
+      "valuesPath": "assets/values/rain-006.bin",
+      "maximumMm": 89.5
+    },
+    {
+      "leadHour": 7,
+      "sourceHour": "Hr8",
+      "validTimeUtc": "2026-04-11T19:00:00Z",
+      "validTimeNz": "2026-04-12T07:00:00+12:00",
+      "path": "assets/frames/rain-007.png",
+      "valuesPath": "assets/values/rain-007.bin",
+      "maximumMm": 93.3
+    },
+    {
+      "leadHour": 8,
+      "sourceHour": "Hr9",
+      "validTimeUtc": "2026-04-11T20:00:00Z",
+      "validTimeNz": "2026-04-12T08:00:00+12:00",
+      "path": "assets/frames/rain-008.png",
+      "valuesPath": "assets/values/rain-008.bin",
+      "maximumMm": 101.0
+    },
+    {
+      "leadHour": 9,
+      "sourceHour": "Hr10",
+      "validTimeUtc": "2026-04-11T21:00:00Z",
+      "validTimeNz": "2026-04-12T09:00:00+12:00",
+      "path": "assets/frames/rain-009.png",
+      "valuesPath": "assets/values/rain-009.bin",
+      "maximumMm": 114.6
+    },
+    {
+      "leadHour": 10,
+      "sourceHour": "Hr11",
+      "validTimeUtc": "2026-04-11T22:00:00Z",
+      "validTimeNz": "2026-04-12T10:00:00+12:00",
+      "path": "assets/frames/rain-010.png",
+      "valuesPath": "assets/values/rain-010.bin",
+      "maximumMm": 127.5
+    },
+    {
+      "leadHour": 11,
+      "sourceHour": "Hr12",
+      "validTimeUtc": "2026-04-11T23:00:00Z",
+      "validTimeNz": "2026-04-12T11:00:00+12:00",
+      "path": "assets/frames/rain-011.png",
+      "valuesPath": "assets/values/rain-011.bin",
+      "maximumMm": 139.6
+    },
+    {
+      "leadHour": 12,
+      "sourceHour": "Hr13",
+      "validTimeUtc": "2026-04-12T00:00:00Z",
+      "validTimeNz": "2026-04-12T12:00:00+12:00",
+      "path": "assets/frames/rain-012.png",
+      "valuesPath": "assets/values/rain-012.bin",
+      "maximumMm": 153.2
+    },
+    {
+      "leadHour": 13,
+      "sourceHour": "Hr14",
+      "validTimeUtc": "2026-04-12T01:00:00Z",
+      "validTimeNz": "2026-04-12T13:00:00+12:00",
+      "path": "assets/frames/rain-013.png",
+      "valuesPath": "assets/values/rain-013.bin",
+      "maximumMm": 167.0
+    },
+    {
+      "leadHour": 14,
+      "sourceHour": "Hr15",
+      "validTimeUtc": "2026-04-12T02:00:00Z",
+      "validTimeNz": "2026-04-12T14:00:00+12:00",
+      "path": "assets/frames/rain-014.png",
+      "valuesPath": "assets/values/rain-014.bin",
+      "maximumMm": 180.7
+    },
+    {
+      "leadHour": 15,
+      "sourceHour": "Hr16",
+      "validTimeUtc": "2026-04-12T03:00:00Z",
+      "validTimeNz": "2026-04-12T15:00:00+12:00",
+      "path": "assets/frames/rain-015.png",
+      "valuesPath": "assets/values/rain-015.bin",
+      "maximumMm": 189.4
+    },
+    {
+      "leadHour": 16,
+      "sourceHour": "Hr17",
+      "validTimeUtc": "2026-04-12T04:00:00Z",
+      "validTimeNz": "2026-04-12T16:00:00+12:00",
+      "path": "assets/frames/rain-016.png",
+      "valuesPath": "assets/values/rain-016.bin",
+      "maximumMm": 191.8
+    },
+    {
+      "leadHour": 17,
+      "sourceHour": "Hr18",
+      "validTimeUtc": "2026-04-12T05:00:00Z",
+      "validTimeNz": "2026-04-12T17:00:00+12:00",
+      "path": "assets/frames/rain-017.png",
+      "valuesPath": "assets/values/rain-017.bin",
+      "maximumMm": 213.0
+    },
+    {
+      "leadHour": 18,
+      "sourceHour": "Hr19",
+      "validTimeUtc": "2026-04-12T06:00:00Z",
+      "validTimeNz": "2026-04-12T18:00:00+12:00",
+      "path": "assets/frames/rain-018.png",
+      "valuesPath": "assets/values/rain-018.bin",
+      "maximumMm": 230.8
+    },
+    {
+      "leadHour": 19,
+      "sourceHour": "Hr20",
+      "validTimeUtc": "2026-04-12T07:00:00Z",
+      "validTimeNz": "2026-04-12T19:00:00+12:00",
+      "path": "assets/frames/rain-019.png",
+      "valuesPath": "assets/values/rain-019.bin",
+      "maximumMm": 241.0
+    },
+    {
+      "leadHour": 20,
+      "sourceHour": "Hr21",
+      "validTimeUtc": "2026-04-12T08:00:00Z",
+      "validTimeNz": "2026-04-12T20:00:00+12:00",
+      "path": "assets/frames/rain-020.png",
+      "valuesPath": "assets/values/rain-020.bin",
+      "maximumMm": 243.2
+    },
+    {
+      "leadHour": 21,
+      "sourceHour": "Hr22",
+      "validTimeUtc": "2026-04-12T09:00:00Z",
+      "validTimeNz": "2026-04-12T21:00:00+12:00",
+      "path": "assets/frames/rain-021.png",
+      "valuesPath": "assets/values/rain-021.bin",
+      "maximumMm": 247.5
+    },
+    {
+      "leadHour": 22,
+      "sourceHour": "Hr23",
+      "validTimeUtc": "2026-04-12T10:00:00Z",
+      "validTimeNz": "2026-04-12T22:00:00+12:00",
+      "path": "assets/frames/rain-022.png",
+      "valuesPath": "assets/values/rain-022.bin",
+      "maximumMm": 253.1
+    },
+    {
+      "leadHour": 23,
+      "sourceHour": "Hr24",
+      "validTimeUtc": "2026-04-12T11:00:00Z",
+      "validTimeNz": "2026-04-12T23:00:00+12:00",
+      "path": "assets/frames/rain-023.png",
+      "valuesPath": "assets/values/rain-023.bin",
+      "maximumMm": 256.4
+    },
+    {
+      "leadHour": 24,
+      "sourceHour": "Hr25",
+      "validTimeUtc": "2026-04-12T12:00:00Z",
+      "validTimeNz": "2026-04-13T00:00:00+12:00",
+      "path": "assets/frames/rain-024.png",
+      "valuesPath": "assets/values/rain-024.bin",
+      "maximumMm": 258.6
+    },
+    {
+      "leadHour": 25,
+      "sourceHour": "Hr26",
+      "validTimeUtc": "2026-04-12T13:00:00Z",
+      "validTimeNz": "2026-04-13T01:00:00+12:00",
+      "path": "assets/frames/rain-025.png",
+      "valuesPath": "assets/values/rain-025.bin",
+      "maximumMm": 259.0
+    },
+    {
+      "leadHour": 26,
+      "sourceHour": "Hr27",
+      "validTimeUtc": "2026-04-12T14:00:00Z",
+      "validTimeNz": "2026-04-13T02:00:00+12:00",
+      "path": "assets/frames/rain-026.png",
+      "valuesPath": "assets/values/rain-026.bin",
+      "maximumMm": 259.0
+    },
+    {
+      "leadHour": 27,
+      "sourceHour": "Hr28",
+      "validTimeUtc": "2026-04-12T15:00:00Z",
+      "validTimeNz": "2026-04-13T03:00:00+12:00",
+      "path": "assets/frames/rain-027.png",
+      "valuesPath": "assets/values/rain-027.bin",
+      "maximumMm": 259.0
+    },
+    {
+      "leadHour": 28,
+      "sourceHour": "Hr29",
+      "validTimeUtc": "2026-04-12T16:00:00Z",
+      "validTimeNz": "2026-04-13T04:00:00+12:00",
+      "path": "assets/frames/rain-028.png",
+      "valuesPath": "assets/values/rain-028.bin",
+      "maximumMm": 259.0
+    },
+    {
+      "leadHour": 29,
+      "sourceHour": "Hr30",
+      "validTimeUtc": "2026-04-12T17:00:00Z",
+      "validTimeNz": "2026-04-13T05:00:00+12:00",
+      "path": "assets/frames/rain-029.png",
+      "valuesPath": "assets/values/rain-029.bin",
+      "maximumMm": 259.0
+    },
+    {
+      "leadHour": 30,
+      "sourceHour": "Hr31",
+      "validTimeUtc": "2026-04-12T18:00:00Z",
+      "validTimeNz": "2026-04-13T06:00:00+12:00",
+      "path": "assets/frames/rain-030.png",
+      "valuesPath": "assets/values/rain-030.bin",
+      "maximumMm": 259.0
+    },
+    {
+      "leadHour": 31,
+      "sourceHour": "Hr32",
+      "validTimeUtc": "2026-04-12T19:00:00Z",
+      "validTimeNz": "2026-04-13T07:00:00+12:00",
+      "path": "assets/frames/rain-031.png",
+      "valuesPath": "assets/values/rain-031.bin",
+      "maximumMm": 259.0
+    },
+    {
+      "leadHour": 32,
+      "sourceHour": "Hr33",
+      "validTimeUtc": "2026-04-12T20:00:00Z",
+      "validTimeNz": "2026-04-13T08:00:00+12:00",
+      "path": "assets/frames/rain-032.png",
+      "valuesPath": "assets/values/rain-032.bin",
+      "maximumMm": 259.0
+    },
+    {
+      "leadHour": 33,
+      "sourceHour": "Hr34",
+      "validTimeUtc": "2026-04-12T21:00:00Z",
+      "validTimeNz": "2026-04-13T09:00:00+12:00",
+      "path": "assets/frames/rain-033.png",
+      "valuesPath": "assets/values/rain-033.bin",
+      "maximumMm": 259.0
+    },
+    {
+      "leadHour": 34,
+      "sourceHour": "Hr35",
+      "validTimeUtc": "2026-04-12T22:00:00Z",
+      "validTimeNz": "2026-04-13T10:00:00+12:00",
+      "path": "assets/frames/rain-034.png",
+      "valuesPath": "assets/values/rain-034.bin",
+      "maximumMm": 259.0
+    },
+    {
+      "leadHour": 35,
+      "sourceHour": "Hr36",
+      "validTimeUtc": "2026-04-12T23:00:00Z",
+      "validTimeNz": "2026-04-13T11:00:00+12:00",
+      "path": "assets/frames/rain-035.png",
+      "valuesPath": "assets/values/rain-035.bin",
+      "maximumMm": 259.0
+    },
+    {
+      "leadHour": 36,
+      "sourceHour": "Hr37",
+      "validTimeUtc": "2026-04-13T00:00:00Z",
+      "validTimeNz": "2026-04-13T12:00:00+12:00",
+      "path": "assets/frames/rain-036.png",
+      "valuesPath": "assets/values/rain-036.bin",
+      "maximumMm": 259.0
+    },
+    {
+      "leadHour": 37,
+      "sourceHour": "Hr38",
+      "validTimeUtc": "2026-04-13T01:00:00Z",
+      "validTimeNz": "2026-04-13T13:00:00+12:00",
+      "path": "assets/frames/rain-037.png",
+      "valuesPath": "assets/values/rain-037.bin",
+      "maximumMm": 259.9
+    },
+    {
+      "leadHour": 38,
+      "sourceHour": "Hr39",
+      "validTimeUtc": "2026-04-13T02:00:00Z",
+      "validTimeNz": "2026-04-13T14:00:00+12:00",
+      "path": "assets/frames/rain-038.png",
+      "valuesPath": "assets/values/rain-038.bin",
+      "maximumMm": 261.7
+    },
+    {
+      "leadHour": 39,
+      "sourceHour": "Hr40",
+      "validTimeUtc": "2026-04-13T03:00:00Z",
+      "validTimeNz": "2026-04-13T15:00:00+12:00",
+      "path": "assets/frames/rain-039.png",
+      "valuesPath": "assets/values/rain-039.bin",
+      "maximumMm": 263.6
+    },
+    {
+      "leadHour": 40,
+      "sourceHour": "Hr41",
+      "validTimeUtc": "2026-04-13T04:00:00Z",
+      "validTimeNz": "2026-04-13T16:00:00+12:00",
+      "path": "assets/frames/rain-040.png",
+      "valuesPath": "assets/values/rain-040.bin",
+      "maximumMm": 265.1
+    },
+    {
+      "leadHour": 41,
+      "sourceHour": "Hr42",
+      "validTimeUtc": "2026-04-13T05:00:00Z",
+      "validTimeNz": "2026-04-13T17:00:00+12:00",
+      "path": "assets/frames/rain-041.png",
+      "valuesPath": "assets/values/rain-041.bin",
+      "maximumMm": 266.8
+    },
+    {
+      "leadHour": 42,
+      "sourceHour": "Hr43",
+      "validTimeUtc": "2026-04-13T06:00:00Z",
+      "validTimeNz": "2026-04-13T18:00:00+12:00",
+      "path": "assets/frames/rain-042.png",
+      "valuesPath": "assets/values/rain-042.bin",
+      "maximumMm": 266.8
+    },
+    {
+      "leadHour": 43,
+      "sourceHour": "Hr44",
+      "validTimeUtc": "2026-04-13T07:00:00Z",
+      "validTimeNz": "2026-04-13T19:00:00+12:00",
+      "path": "assets/frames/rain-043.png",
+      "valuesPath": "assets/values/rain-043.bin",
+      "maximumMm": 266.8
+    },
+    {
+      "leadHour": 44,
+      "sourceHour": "Hr45",
+      "validTimeUtc": "2026-04-13T08:00:00Z",
+      "validTimeNz": "2026-04-13T20:00:00+12:00",
+      "path": "assets/frames/rain-044.png",
+      "valuesPath": "assets/values/rain-044.bin",
+      "maximumMm": 266.8
+    },
+    {
+      "leadHour": 45,
+      "sourceHour": "Hr46",
+      "validTimeUtc": "2026-04-13T09:00:00Z",
+      "validTimeNz": "2026-04-13T21:00:00+12:00",
+      "path": "assets/frames/rain-045.png",
+      "valuesPath": "assets/values/rain-045.bin",
+      "maximumMm": 266.9
+    },
+    {
+      "leadHour": 46,
+      "sourceHour": "Hr47",
+      "validTimeUtc": "2026-04-13T10:00:00Z",
+      "validTimeNz": "2026-04-13T22:00:00+12:00",
+      "path": "assets/frames/rain-046.png",
+      "valuesPath": "assets/values/rain-046.bin",
+      "maximumMm": 267.0
+    },
+    {
+      "leadHour": 47,
+      "sourceHour": "Hr48",
+      "validTimeUtc": "2026-04-13T11:00:00Z",
+      "validTimeNz": "2026-04-13T23:00:00+12:00",
+      "path": "assets/frames/rain-047.png",
+      "valuesPath": "assets/values/rain-047.bin",
+      "maximumMm": 268.2
+    },
+    {
+      "leadHour": 48,
+      "sourceHour": "Hr49",
+      "validTimeUtc": "2026-04-13T12:00:00Z",
+      "validTimeNz": "2026-04-14T00:00:00+12:00",
+      "path": "assets/frames/rain-048.png",
+      "valuesPath": "assets/values/rain-048.bin",
+      "maximumMm": 268.3
+    },
+    {
+      "leadHour": 49,
+      "sourceHour": "Hr50",
+      "validTimeUtc": "2026-04-13T13:00:00Z",
+      "validTimeNz": "2026-04-14T01:00:00+12:00",
+      "path": "assets/frames/rain-049.png",
+      "valuesPath": "assets/values/rain-049.bin",
+      "maximumMm": 268.8
+    },
+    {
+      "leadHour": 50,
+      "sourceHour": "Hr51",
+      "validTimeUtc": "2026-04-13T14:00:00Z",
+      "validTimeNz": "2026-04-14T02:00:00+12:00",
+      "path": "assets/frames/rain-050.png",
+      "valuesPath": "assets/values/rain-050.bin",
+      "maximumMm": 270.2
+    },
+    {
+      "leadHour": 51,
+      "sourceHour": "Hr52",
+      "validTimeUtc": "2026-04-13T15:00:00Z",
+      "validTimeNz": "2026-04-14T03:00:00+12:00",
+      "path": "assets/frames/rain-051.png",
+      "valuesPath": "assets/values/rain-051.bin",
+      "maximumMm": 274.7
+    },
+    {
+      "leadHour": 52,
+      "sourceHour": "Hr53",
+      "validTimeUtc": "2026-04-13T16:00:00Z",
+      "validTimeNz": "2026-04-14T04:00:00+12:00",
+      "path": "assets/frames/rain-052.png",
+      "valuesPath": "assets/values/rain-052.bin",
+      "maximumMm": 275.4
+    },
+    {
+      "leadHour": 53,
+      "sourceHour": "Hr54",
+      "validTimeUtc": "2026-04-13T17:00:00Z",
+      "validTimeNz": "2026-04-14T05:00:00+12:00",
+      "path": "assets/frames/rain-053.png",
+      "valuesPath": "assets/values/rain-053.bin",
+      "maximumMm": 275.9
+    },
+    {
+      "leadHour": 54,
+      "sourceHour": "Hr55",
+      "validTimeUtc": "2026-04-13T18:00:00Z",
+      "validTimeNz": "2026-04-14T06:00:00+12:00",
+      "path": "assets/frames/rain-054.png",
+      "valuesPath": "assets/values/rain-054.bin",
+      "maximumMm": 275.9
+    },
+    {
+      "leadHour": 55,
+      "sourceHour": "Hr56",
+      "validTimeUtc": "2026-04-13T19:00:00Z",
+      "validTimeNz": "2026-04-14T07:00:00+12:00",
+      "path": "assets/frames/rain-055.png",
+      "valuesPath": "assets/values/rain-055.bin",
+      "maximumMm": 275.9
+    },
+    {
+      "leadHour": 56,
+      "sourceHour": "Hr57",
+      "validTimeUtc": "2026-04-13T20:00:00Z",
+      "validTimeNz": "2026-04-14T08:00:00+12:00",
+      "path": "assets/frames/rain-056.png",
+      "valuesPath": "assets/values/rain-056.bin",
+      "maximumMm": 275.9
+    },
+    {
+      "leadHour": 57,
+      "sourceHour": "Hr58",
+      "validTimeUtc": "2026-04-13T21:00:00Z",
+      "validTimeNz": "2026-04-14T09:00:00+12:00",
+      "path": "assets/frames/rain-057.png",
+      "valuesPath": "assets/values/rain-057.bin",
+      "maximumMm": 275.9
+    },
+    {
+      "leadHour": 58,
+      "sourceHour": "Hr59",
+      "validTimeUtc": "2026-04-13T22:00:00Z",
+      "validTimeNz": "2026-04-14T10:00:00+12:00",
+      "path": "assets/frames/rain-058.png",
+      "valuesPath": "assets/values/rain-058.bin",
+      "maximumMm": 275.9
+    },
+    {
+      "leadHour": 59,
+      "sourceHour": "Hr60",
+      "validTimeUtc": "2026-04-13T23:00:00Z",
+      "validTimeNz": "2026-04-14T11:00:00+12:00",
+      "path": "assets/frames/rain-059.png",
+      "valuesPath": "assets/values/rain-059.bin",
+      "maximumMm": 275.9
+    },
+    {
+      "leadHour": 60,
+      "sourceHour": "Hr61",
+      "validTimeUtc": "2026-04-14T00:00:00Z",
+      "validTimeNz": "2026-04-14T12:00:00+12:00",
+      "path": "assets/frames/rain-060.png",
+      "valuesPath": "assets/values/rain-060.bin",
+      "maximumMm": 275.9
+    },
+    {
+      "leadHour": 61,
+      "sourceHour": "Hr62",
+      "validTimeUtc": "2026-04-14T01:00:00Z",
+      "validTimeNz": "2026-04-14T13:00:00+12:00",
+      "path": "assets/frames/rain-061.png",
+      "valuesPath": "assets/values/rain-061.bin",
+      "maximumMm": 275.9
+    },
+    {
+      "leadHour": 62,
+      "sourceHour": "Hr63",
+      "validTimeUtc": "2026-04-14T02:00:00Z",
+      "validTimeNz": "2026-04-14T14:00:00+12:00",
+      "path": "assets/frames/rain-062.png",
+      "valuesPath": "assets/values/rain-062.bin",
+      "maximumMm": 275.9
+    },
+    {
+      "leadHour": 63,
+      "sourceHour": "Hr64",
+      "validTimeUtc": "2026-04-14T03:00:00Z",
+      "validTimeNz": "2026-04-14T15:00:00+12:00",
+      "path": "assets/frames/rain-063.png",
+      "valuesPath": "assets/values/rain-063.bin",
+      "maximumMm": 275.9
+    },
+    {
+      "leadHour": 64,
+      "sourceHour": "Hr65",
+      "validTimeUtc": "2026-04-14T04:00:00Z",
+      "validTimeNz": "2026-04-14T16:00:00+12:00",
+      "path": "assets/frames/rain-064.png",
+      "valuesPath": "assets/values/rain-064.bin",
+      "maximumMm": 276.4
+    },
+    {
+      "leadHour": 65,
+      "sourceHour": "Hr66",
+      "validTimeUtc": "2026-04-14T05:00:00Z",
+      "validTimeNz": "2026-04-14T17:00:00+12:00",
+      "path": "assets/frames/rain-065.png",
+      "valuesPath": "assets/values/rain-065.bin",
+      "maximumMm": 277.1
+    },
+    {
+      "leadHour": 66,
+      "sourceHour": "Hr67",
+      "validTimeUtc": "2026-04-14T06:00:00Z",
+      "validTimeNz": "2026-04-14T18:00:00+12:00",
+      "path": "assets/frames/rain-066.png",
+      "valuesPath": "assets/values/rain-066.bin",
+      "maximumMm": 277.5
+    },
+    {
+      "leadHour": 67,
+      "sourceHour": "Hr68",
+      "validTimeUtc": "2026-04-14T07:00:00Z",
+      "validTimeNz": "2026-04-14T19:00:00+12:00",
+      "path": "assets/frames/rain-067.png",
+      "valuesPath": "assets/values/rain-067.bin",
+      "maximumMm": 278.0
+    },
+    {
+      "leadHour": 68,
+      "sourceHour": "Hr69",
+      "validTimeUtc": "2026-04-14T08:00:00Z",
+      "validTimeNz": "2026-04-14T20:00:00+12:00",
+      "path": "assets/frames/rain-068.png",
+      "valuesPath": "assets/values/rain-068.bin",
+      "maximumMm": 278.0
+    },
+    {
+      "leadHour": 69,
+      "sourceHour": "Hr70",
+      "validTimeUtc": "2026-04-14T09:00:00Z",
+      "validTimeNz": "2026-04-14T21:00:00+12:00",
+      "path": "assets/frames/rain-069.png",
+      "valuesPath": "assets/values/rain-069.bin",
+      "maximumMm": 278.0
+    },
+    {
+      "leadHour": 70,
+      "sourceHour": "Hr71",
+      "validTimeUtc": "2026-04-14T10:00:00Z",
+      "validTimeNz": "2026-04-14T22:00:00+12:00",
+      "path": "assets/frames/rain-070.png",
+      "valuesPath": "assets/values/rain-070.bin",
+      "maximumMm": 278.2
+    },
+    {
+      "leadHour": 71,
+      "sourceHour": "Hr72",
+      "validTimeUtc": "2026-04-14T11:00:00Z",
+      "validTimeNz": "2026-04-14T23:00:00+12:00",
+      "path": "assets/frames/rain-071.png",
+      "valuesPath": "assets/values/rain-071.bin",
+      "maximumMm": 279.6
+    },
+    {
+      "leadHour": 72,
+      "sourceHour": "Hr73",
+      "validTimeUtc": "2026-04-14T12:00:00Z",
+      "validTimeNz": "2026-04-15T00:00:00+12:00",
+      "path": "assets/frames/rain-072.png",
+      "valuesPath": "assets/values/rain-072.bin",
+      "maximumMm": 280.9
+    },
+    {
+      "leadHour": 73,
+      "sourceHour": "Hr74",
+      "validTimeUtc": "2026-04-14T13:00:00Z",
+      "validTimeNz": "2026-04-15T01:00:00+12:00",
+      "path": "assets/frames/rain-073.png",
+      "valuesPath": "assets/values/rain-073.bin",
+      "maximumMm": 281.3
+    },
+    {
+      "leadHour": 74,
+      "sourceHour": "Hr75",
+      "validTimeUtc": "2026-04-14T14:00:00Z",
+      "validTimeNz": "2026-04-15T02:00:00+12:00",
+      "path": "assets/frames/rain-074.png",
+      "valuesPath": "assets/values/rain-074.bin",
+      "maximumMm": 281.3
+    },
+    {
+      "leadHour": 75,
+      "sourceHour": "Hr76",
+      "validTimeUtc": "2026-04-14T15:00:00Z",
+      "validTimeNz": "2026-04-15T03:00:00+12:00",
+      "path": "assets/frames/rain-075.png",
+      "valuesPath": "assets/values/rain-075.bin",
+      "maximumMm": 283.7
+    },
+    {
+      "leadHour": 76,
+      "sourceHour": "Hr77",
+      "validTimeUtc": "2026-04-14T16:00:00Z",
+      "validTimeNz": "2026-04-15T04:00:00+12:00",
+      "path": "assets/frames/rain-076.png",
+      "valuesPath": "assets/values/rain-076.bin",
+      "maximumMm": 286.9
+    },
+    {
+      "leadHour": 77,
+      "sourceHour": "Hr78",
+      "validTimeUtc": "2026-04-14T17:00:00Z",
+      "validTimeNz": "2026-04-15T05:00:00+12:00",
+      "path": "assets/frames/rain-077.png",
+      "valuesPath": "assets/values/rain-077.bin",
+      "maximumMm": 292.7
+    },
+    {
+      "leadHour": 78,
+      "sourceHour": "Hr79",
+      "validTimeUtc": "2026-04-14T18:00:00Z",
+      "validTimeNz": "2026-04-15T06:00:00+12:00",
+      "path": "assets/frames/rain-078.png",
+      "valuesPath": "assets/values/rain-078.bin",
+      "maximumMm": 294.8
+    },
+    {
+      "leadHour": 79,
+      "sourceHour": "Hr80",
+      "validTimeUtc": "2026-04-14T19:00:00Z",
+      "validTimeNz": "2026-04-15T07:00:00+12:00",
+      "path": "assets/frames/rain-079.png",
+      "valuesPath": "assets/values/rain-079.bin",
+      "maximumMm": 294.9
+    },
+    {
+      "leadHour": 80,
+      "sourceHour": "Hr81",
+      "validTimeUtc": "2026-04-14T20:00:00Z",
+      "validTimeNz": "2026-04-15T08:00:00+12:00",
+      "path": "assets/frames/rain-080.png",
+      "valuesPath": "assets/values/rain-080.bin",
+      "maximumMm": 295.3
+    },
+    {
+      "leadHour": 81,
+      "sourceHour": "Hr82",
+      "validTimeUtc": "2026-04-14T21:00:00Z",
+      "validTimeNz": "2026-04-15T09:00:00+12:00",
+      "path": "assets/frames/rain-081.png",
+      "valuesPath": "assets/values/rain-081.bin",
+      "maximumMm": 295.5
+    },
+    {
+      "leadHour": 82,
+      "sourceHour": "Hr83",
+      "validTimeUtc": "2026-04-14T22:00:00Z",
+      "validTimeNz": "2026-04-15T10:00:00+12:00",
+      "path": "assets/frames/rain-082.png",
+      "valuesPath": "assets/values/rain-082.bin",
+      "maximumMm": 296.0
+    },
+    {
+      "leadHour": 83,
+      "sourceHour": "Hr84",
+      "validTimeUtc": "2026-04-14T23:00:00Z",
+      "validTimeNz": "2026-04-15T11:00:00+12:00",
+      "path": "assets/frames/rain-083.png",
+      "valuesPath": "assets/values/rain-083.bin",
+      "maximumMm": 296.2
+    },
+    {
+      "leadHour": 84,
+      "sourceHour": "Hr85",
+      "validTimeUtc": "2026-04-15T00:00:00Z",
+      "validTimeNz": "2026-04-15T12:00:00+12:00",
+      "path": "assets/frames/rain-084.png",
+      "valuesPath": "assets/values/rain-084.bin",
+      "maximumMm": 296.2
+    }
+  ]
+}

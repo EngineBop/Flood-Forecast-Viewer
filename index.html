@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en-NZ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Interactive proof of concept for viewing cumulative flood forecast rainfall through time." />
+    <title>Flood forecast rainfall viewer</title>
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@6.9.0/dist/maplibre-gl.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <div id="map" aria-label="Interactive forecast rainfall map"></div>
+
+      <header class="topbar glass-panel">
+        <div class="brand-lockup">
+          <div>
+            <p class="eyebrow">FLOOD HUB · PROOF OF CONCEPT</p>
+            <h1>Forecast rainfall</h1>
+          </div>
+        </div>
+        <div class="forecast-pickers" aria-label="Forecast selection">
+          <label>
+            <span>Model</span>
+            <select id="model-select" aria-label="Forecast model">
+              <option>WRF prototype</option>
+            </select>
+          </label>
+          <label>
+            <span>Variable</span>
+            <select id="variable-select" aria-label="Forecast variable">
+              <option>Cumulative rainfall</option>
+            </select>
+          </label>
+        </div>
+        <button id="layers-button" class="icon-button" type="button" aria-expanded="true" aria-controls="layers-panel">
+          <span class="layers-glyph" aria-hidden="true"></span>
+          Layers
+        </button>
+      </header>
+
+      <aside id="status-card" class="status-card glass-panel" aria-live="polite">
+        <p class="status-label">VALID TIME · NZST</p>
+        <p id="valid-time" class="status-time">Loading forecast…</p>
+        <div class="status-meta">
+          <span id="lead-time">T+0</span>
+          <span class="divider"></span>
+          <span id="frame-max">Frame max 0 mm</span>
+        </div>
+      </aside>
+
+      <aside id="layers-panel" class="layers-panel glass-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">MAP DISPLAY</p>
+            <h2>Layers</h2>
+          </div>
+          <button id="close-layers" class="close-button" type="button" aria-label="Close layers panel">×</button>
+        </div>
+        <div class="layer-row">
+          <div>
+            <strong>Forecast rainfall</strong>
+            <small>Cumulative total</small>
+          </div>
+          <label class="switch"><input id="rain-toggle" type="checkbox" checked /><span></span></label>
+        </div>
+        <div class="layer-row">
+          <div>
+            <strong>Surface catchments</strong>
+            <small>BOPRC public layer</small>
+          </div>
+          <label class="switch"><input id="catchment-toggle" type="checkbox" checked /><span></span></label>
+        </div>
+        <div class="layer-row">
+          <div>
+            <strong>Place labels</strong>
+            <small>Reference overlay</small>
+          </div>
+          <label class="switch"><input id="label-toggle" type="checkbox" checked /><span></span></label>
+        </div>
+        <label class="opacity-control">
+          <span><strong>Rainfall opacity</strong><output id="opacity-output">100%</output></span>
+          <input id="opacity-slider" type="range" min="20" max="100" value="100" />
+        </label>
+        <div class="basemap-control" role="group" aria-label="Basemap">
+          <span>Basemap</span>
+          <button class="segmented active" data-basemap="imagery" type="button">Imagery</button>
+          <button class="segmented" data-basemap="streets" type="button">Streets</button>
+        </div>
+      </aside>
+
+      <section class="legend-card glass-panel" aria-label="Rainfall legend">
+        <div class="legend-heading">
+          <span>Cumulative rainfall</span>
+          <strong>mm</strong>
+        </div>
+        <div class="colour-ramp" aria-hidden="true"></div>
+        <div class="legend-ticks" aria-hidden="true">
+          <span>0</span><span>50</span><span>100</span><span>150</span><span>200</span><span>250</span><span>300+</span>
+        </div>
+      </section>
+
+      <section class="timeline glass-panel" aria-label="Forecast animation controls">
+        <button id="previous-button" class="transport-button" type="button" aria-label="Previous forecast hour">‹</button>
+        <button id="play-button" class="play-button" type="button" aria-label="Play forecast animation"><span class="play-icon"></span></button>
+        <button id="next-button" class="transport-button" type="button" aria-label="Next forecast hour">›</button>
+        <div class="timeline-main">
+          <div class="timeline-labels">
+            <span id="timeline-start">Forecast start</span>
+            <strong id="timeline-current">T+0 · 12:00 am</strong>
+            <span id="timeline-end">Forecast end</span>
+          </div>
+          <input id="time-slider" type="range" min="0" max="84" value="0" step="1" aria-label="Forecast hour" />
+        </div>
+        <label class="speed-control">
+          <span>Speed</span>
+          <select id="speed-select" aria-label="Animation speed">
+            <option value="700">Slow</option>
+            <option value="380" selected>Normal</option>
+            <option value="180">Fast</option>
+          </select>
+        </label>
+      </section>
+
+      <div id="loading" class="loading-screen">
+        <span class="loading-mark"></span>
+        <strong>Preparing forecast</strong>
+        <small>Loading 85 hourly rainfall frames</small>
+      </div>
+    </main>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
