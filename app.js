@@ -21,6 +21,11 @@ const els = {
   labelToggle: document.querySelector("#label-toggle"),
   opacity: document.querySelector("#opacity-slider"),
   opacityOutput: document.querySelector("#opacity-output"),
+  variable: document.querySelector("#variable-select"),
+  layerMode: document.querySelector("#layer-mode"),
+  legendTitle: document.querySelector("#legend-title"),
+  legendTicks: document.querySelector("#legend-ticks"),
+  colourRamp: document.querySelector(".colour-ramp"),
 };
 
 const state = {
@@ -32,6 +37,7 @@ const state = {
   opacity: 1,
   mapReady: false,
   valuesCache: new Map(),
+  variable: "cumulative",
 };
 
 const style = {
@@ -96,8 +102,25 @@ function formatDate(iso, short = false) {
   return (short ? shortFormatter : dateFormatter).format(new Date(iso));
 }
 
+function variableConfig() {
+  return state.forecast.variables[state.variable];
+}
+
 function frameImageUrl(frame) {
-  return `${frame.path}?v=${encodeURIComponent(state.forecast.dataVersion || "1")}`;
+  const path = frame[variableConfig().pathKey];
+  return `${path}?v=${encodeURIComponent(state.forecast.dataVersion || "1")}`;
+}
+
+function updateVariableInterface() {
+  const config = variableConfig();
+  els.layerMode.textContent = config.layerSubtitle;
+  els.legendTitle.textContent = config.legendTitle;
+  els.legendTicks.replaceChildren(...config.legendStopsMm.map((value, index) => {
+    const tick = document.createElement("span");
+    tick.textContent = index === config.legendStopsMm.length - 1 ? `${value}+` : String(value);
+    return tick;
+  }));
+  els.colourRamp.style.background = config.legendGradient;
 }
 
 function preload(index) {
@@ -134,7 +157,8 @@ async function showFrame(index, { immediate = false } = {}) {
   els.slider.value = String(state.index);
   els.validTime.textContent = formatDate(frame.validTimeNz);
   els.leadTime.textContent = `T+${frame.leadHour}`;
-  els.frameMax.textContent = `Frame max ${frame.maximumMm.toFixed(1)} mm`;
+  const frameMaximum = frame[variableConfig().maximumKey];
+  els.frameMax.textContent = `Frame max ${frameMaximum.toFixed(1)} mm`;
   els.timelineCurrent.textContent = `T+${frame.leadHour} · ${formatDate(frame.validTimeNz, true)}`;
   const progress = (state.index / (total - 1)) * 100;
   els.slider.style.setProperty("--progress", `${progress}%`);
@@ -198,11 +222,13 @@ function lonLatToNztm(lonDegrees, latDegrees) {
 }
 
 async function loadFrameValues(index) {
-  if (state.valuesCache.has(index)) return state.valuesCache.get(index);
-  const response = await fetch(state.forecast.frames[index].valuesPath);
+  const cacheKey = `${state.variable}:${index}`;
+  if (state.valuesCache.has(cacheKey)) return state.valuesCache.get(cacheKey);
+  const path = state.forecast.frames[index][variableConfig().valuesPathKey];
+  const response = await fetch(`${path}?v=${encodeURIComponent(state.forecast.dataVersion || "1")}`);
   if (!response.ok) throw new Error("Rainfall values could not be loaded");
   const values = new Uint16Array(await response.arrayBuffer());
-  state.valuesCache.set(index, values);
+  state.valuesCache.set(cacheKey, values);
   if (state.valuesCache.size > 8) {
     const firstKey = state.valuesCache.keys().next().value;
     state.valuesCache.delete(firstKey);
@@ -214,7 +240,7 @@ function buildRainfallPopup(value, frame) {
   const container = document.createElement("div");
   container.className = "rainfall-popup";
   const label = document.createElement("span");
-  label.textContent = "Cumulative rainfall";
+  label.textContent = variableConfig().popupLabel;
   const reading = document.createElement("strong");
   reading.textContent = `${value.toFixed(1)} mm`;
   const time = document.createElement("small");
@@ -276,6 +302,10 @@ async function initialise() {
   const response = await fetch("assets/forecast.json");
   if (!response.ok) throw new Error("Forecast manifest could not be loaded");
   state.forecast = await response.json();
+  const requestedVariable = new URLSearchParams(window.location.search).get("variable");
+  if (requestedVariable && state.forecast.variables[requestedVariable]) state.variable = requestedVariable;
+  els.variable.value = state.variable;
+  updateVariableInterface();
   els.slider.max = String(state.forecast.frames.length - 1);
   els.timelineStart.textContent = formatDate(state.forecast.frames[0].validTimeNz, true);
   els.timelineEnd.textContent = formatDate(state.forecast.frames.at(-1).validTimeNz, true);
@@ -314,6 +344,12 @@ els.previous.addEventListener("click", () => { stopPlayback(); showFrame(state.i
 els.next.addEventListener("click", () => { stopPlayback(); showFrame(state.index + 1); });
 els.slider.addEventListener("input", (event) => { stopPlayback(); showFrame(Number(event.target.value)); });
 els.speed.addEventListener("change", () => { if (state.playing) startPlayback(); });
+els.variable.addEventListener("change", async (event) => {
+  stopPlayback();
+  state.variable = event.target.value;
+  updateVariableInterface();
+  await showFrame(state.index, { immediate: true });
+});
 els.layersButton.addEventListener("click", () => {
   const hidden = els.layersPanel.classList.toggle("hidden");
   els.layersButton.setAttribute("aria-expanded", String(!hidden));

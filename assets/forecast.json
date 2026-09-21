@@ -1,5 +1,5 @@
 {
-  "title": "Cumulative forecast rainfall",
+  "title": "Forecast rainfall",
   "model": "UKMO",
   "forecastRunUtc": "2026-04-11T12:00:00Z",
   "forecastRunNz": "2026-04-12T00:00:00+12:00",
@@ -46,7 +46,7 @@
     250,
     300
   ],
-  "dataVersion": "web-mercator-aligned-v1",
+  "dataVersion": "web-mercator-hourly-v1",
   "frames": [
     {
       "leadHour": 0,
@@ -55,7 +55,10 @@
       "validTimeNz": "2026-04-12T00:00:00+12:00",
       "path": "assets/frames/rain-000.png",
       "valuesPath": "assets/values/rain-000.bin",
-      "maximumMm": 0.0
+      "maximumMm": 0.0,
+      "hourlyPath": "assets/frames-hourly/rain-000.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-000.bin",
+      "hourlyMaximumMm": 0.0
     },
     {
       "leadHour": 1,
@@ -64,7 +67,10 @@
       "validTimeNz": "2026-04-12T01:00:00+12:00",
       "path": "assets/frames/rain-001.png",
       "valuesPath": "assets/values/rain-001.bin",
-      "maximumMm": 20.1
+      "maximumMm": 20.1,
+      "hourlyPath": "assets/frames-hourly/rain-001.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-001.bin",
+      "hourlyMaximumMm": 20.1
     },
     {
       "leadHour": 2,
@@ -73,7 +79,10 @@
       "validTimeNz": "2026-04-12T02:00:00+12:00",
       "path": "assets/frames/rain-002.png",
       "valuesPath": "assets/values/rain-002.bin",
-      "maximumMm": 39.7
+      "maximumMm": 39.7,
+      "hourlyPath": "assets/frames-hourly/rain-002.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-002.bin",
+      "hourlyMaximumMm": 21.9
     },
     {
       "leadHour": 3,
@@ -82,7 +91,10 @@
       "validTimeNz": "2026-04-12T03:00:00+12:00",
       "path": "assets/frames/rain-003.png",
       "valuesPath": "assets/values/rain-003.bin",
-      "maximumMm": 49.1
+      "maximumMm": 49.1,
+      "hourlyPath": "assets/frames-hourly/rain-003.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-003.bin",
+      "hourlyMaximumMm": 19.4
     },
     {
       "leadHour": 4,
@@ -91,7 +103,10 @@
       "validTimeNz": "2026-04-12T04:00:00+12:00",
       "path": "assets/frames/rain-004.png",
       "valuesPath": "assets/values/rain-004.bin",
-      "maximumMm": 60.4
+      "maximumMm": 60.4,
+      "hourlyPath": "assets/frames-hourly/rain-004.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-004.bin",
+      "hourlyMaximumMm": 22.9
     },
     {
       "leadHour": 5,
@@ -100,7 +115,10 @@
       "validTimeNz": "2026-04-12T05:00:00+12:00",
       "path": "assets/frames/rain-005.png",
       "valuesPath": "assets/values/rain-005.bin",
-      "maximumMm": 79.2
+      "maximumMm": 79.2,
+      "hourlyPath": "assets/frames-hourly/rain-005.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-005.bin",
+      "hourlyMaximumMm": 26.3
     },
     {
       "leadHour": 6,
@@ -109,7 +127,10 @@
       "validTimeNz": "2026-04-12T06:00:00+12:00",
       "path": "assets/frames/rain-006.png",
       "valuesPath": "assets/values/rain-006.bin",
-      "maximumMm": 89.5
+      "maximumMm": 89.5,
+      "hourlyPath": "assets/frames-hourly/rain-006.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-006.bin",
+      "hourlyMaximumMm": 22.4
     },
     {
       "leadHour": 7,
@@ -118,7 +139,10 @@
       "validTimeNz": "2026-04-12T07:00:00+12:00",
       "path": "assets/frames/rain-007.png",
       "valuesPath": "assets/values/rain-007.bin",
-      "maximumMm": 93.3
+      "maximumMm": 93.3,
+      "hourlyPath": "assets/frames-hourly/rain-007.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-007.bin",
+      "hourlyMaximumMm": 21.5
     },
     {
       "leadHour": 8,
@@ -127,7 +151,10 @@
       "validTimeNz": "2026-04-12T08:00:00+12:00",
       "path": "assets/frames/rain-008.png",
       "valuesPath": "assets/values/rain-008.bin",
-      "maximumMm": 101.0
+      "maximumMm": 101.0,
+      "hourlyPath": "assets/frames-hourly/rain-008.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-008.bin",
+      "hourlyMaximumMm": 19.0
     },
     {
       "leadHour": 9,
@@ -136,7 +163,10 @@
       "validTimeNz": "2026-04-12T09:00:00+12:00",
       "path": "assets/frames/rain-009.png",
       "valuesPath": "assets/values/rain-009.bin",
-      "maximumMm": 114.6
+      "maximumMm": 114.6,
+      "hourlyPath": "assets/frames-hourly/rain-009.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-009.bin",
+      "hourlyMaximumMm": 22.5
     },
     {
       "leadHour": 10,
@@ -145,7 +175,10 @@
       "validTimeNz": "2026-04-12T10:00:00+12:00",
       "path": "assets/frames/rain-010.png",
       "valuesPath": "assets/values/rain-010.bin",
-      "maximumMm": 127.5
+      "maximumMm": 127.5,
+      "hourlyPath": "assets/frames-hourly/rain-010.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-010.bin",
+      "hourlyMaximumMm": 35.8
     },
     {
       "leadHour": 11,
@@ -154,7 +187,10 @@
       "validTimeNz": "2026-04-12T11:00:00+12:00",
       "path": "assets/frames/rain-011.png",
       "valuesPath": "assets/values/rain-011.bin",
-      "maximumMm": 139.6
+      "maximumMm": 139.6,
+      "hourlyPath": "assets/frames-hourly/rain-011.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-011.bin",
+      "hourlyMaximumMm": 32.3
     },
     {
       "leadHour": 12,
@@ -163,7 +199,10 @@
       "validTimeNz": "2026-04-12T12:00:00+12:00",
       "path": "assets/frames/rain-012.png",
       "valuesPath": "assets/values/rain-012.bin",
-      "maximumMm": 153.2
+      "maximumMm": 153.2,
+      "hourlyPath": "assets/frames-hourly/rain-012.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-012.bin",
+      "hourlyMaximumMm": 23.3
     },
     {
       "leadHour": 13,
@@ -172,7 +211,10 @@
       "validTimeNz": "2026-04-12T13:00:00+12:00",
       "path": "assets/frames/rain-013.png",
       "valuesPath": "assets/values/rain-013.bin",
-      "maximumMm": 167.0
+      "maximumMm": 167.0,
+      "hourlyPath": "assets/frames-hourly/rain-013.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-013.bin",
+      "hourlyMaximumMm": 35.2
     },
     {
       "leadHour": 14,
@@ -181,7 +223,10 @@
       "validTimeNz": "2026-04-12T14:00:00+12:00",
       "path": "assets/frames/rain-014.png",
       "valuesPath": "assets/values/rain-014.bin",
-      "maximumMm": 180.7
+      "maximumMm": 180.7,
+      "hourlyPath": "assets/frames-hourly/rain-014.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-014.bin",
+      "hourlyMaximumMm": 29.6
     },
     {
       "leadHour": 15,
@@ -190,7 +235,10 @@
       "validTimeNz": "2026-04-12T15:00:00+12:00",
       "path": "assets/frames/rain-015.png",
       "valuesPath": "assets/values/rain-015.bin",
-      "maximumMm": 189.4
+      "maximumMm": 189.4,
+      "hourlyPath": "assets/frames-hourly/rain-015.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-015.bin",
+      "hourlyMaximumMm": 26.4
     },
     {
       "leadHour": 16,
@@ -199,7 +247,10 @@
       "validTimeNz": "2026-04-12T16:00:00+12:00",
       "path": "assets/frames/rain-016.png",
       "valuesPath": "assets/values/rain-016.bin",
-      "maximumMm": 191.8
+      "maximumMm": 191.8,
+      "hourlyPath": "assets/frames-hourly/rain-016.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-016.bin",
+      "hourlyMaximumMm": 28.7
     },
     {
       "leadHour": 17,
@@ -208,7 +259,10 @@
       "validTimeNz": "2026-04-12T17:00:00+12:00",
       "path": "assets/frames/rain-017.png",
       "valuesPath": "assets/values/rain-017.bin",
-      "maximumMm": 213.0
+      "maximumMm": 213.0,
+      "hourlyPath": "assets/frames-hourly/rain-017.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-017.bin",
+      "hourlyMaximumMm": 31.5
     },
     {
       "leadHour": 18,
@@ -217,7 +271,10 @@
       "validTimeNz": "2026-04-12T18:00:00+12:00",
       "path": "assets/frames/rain-018.png",
       "valuesPath": "assets/values/rain-018.bin",
-      "maximumMm": 230.8
+      "maximumMm": 230.8,
+      "hourlyPath": "assets/frames-hourly/rain-018.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-018.bin",
+      "hourlyMaximumMm": 25.1
     },
     {
       "leadHour": 19,
@@ -226,7 +283,10 @@
       "validTimeNz": "2026-04-12T19:00:00+12:00",
       "path": "assets/frames/rain-019.png",
       "valuesPath": "assets/values/rain-019.bin",
-      "maximumMm": 241.0
+      "maximumMm": 241.0,
+      "hourlyPath": "assets/frames-hourly/rain-019.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-019.bin",
+      "hourlyMaximumMm": 26.1
     },
     {
       "leadHour": 20,
@@ -235,7 +295,10 @@
       "validTimeNz": "2026-04-12T20:00:00+12:00",
       "path": "assets/frames/rain-020.png",
       "valuesPath": "assets/values/rain-020.bin",
-      "maximumMm": 243.2
+      "maximumMm": 243.2,
+      "hourlyPath": "assets/frames-hourly/rain-020.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-020.bin",
+      "hourlyMaximumMm": 24.9
     },
     {
       "leadHour": 21,
@@ -244,7 +307,10 @@
       "validTimeNz": "2026-04-12T21:00:00+12:00",
       "path": "assets/frames/rain-021.png",
       "valuesPath": "assets/values/rain-021.bin",
-      "maximumMm": 247.5
+      "maximumMm": 247.5,
+      "hourlyPath": "assets/frames-hourly/rain-021.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-021.bin",
+      "hourlyMaximumMm": 26.9
     },
     {
       "leadHour": 22,
@@ -253,7 +319,10 @@
       "validTimeNz": "2026-04-12T22:00:00+12:00",
       "path": "assets/frames/rain-022.png",
       "valuesPath": "assets/values/rain-022.bin",
-      "maximumMm": 253.1
+      "maximumMm": 253.1,
+      "hourlyPath": "assets/frames-hourly/rain-022.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-022.bin",
+      "hourlyMaximumMm": 29.0
     },
     {
       "leadHour": 23,
@@ -262,7 +331,10 @@
       "validTimeNz": "2026-04-12T23:00:00+12:00",
       "path": "assets/frames/rain-023.png",
       "valuesPath": "assets/values/rain-023.bin",
-      "maximumMm": 256.4
+      "maximumMm": 256.4,
+      "hourlyPath": "assets/frames-hourly/rain-023.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-023.bin",
+      "hourlyMaximumMm": 19.0
     },
     {
       "leadHour": 24,
@@ -271,7 +343,10 @@
       "validTimeNz": "2026-04-13T00:00:00+12:00",
       "path": "assets/frames/rain-024.png",
       "valuesPath": "assets/values/rain-024.bin",
-      "maximumMm": 258.6
+      "maximumMm": 258.6,
+      "hourlyPath": "assets/frames-hourly/rain-024.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-024.bin",
+      "hourlyMaximumMm": 16.6
     },
     {
       "leadHour": 25,
@@ -280,7 +355,10 @@
       "validTimeNz": "2026-04-13T01:00:00+12:00",
       "path": "assets/frames/rain-025.png",
       "valuesPath": "assets/values/rain-025.bin",
-      "maximumMm": 259.0
+      "maximumMm": 259.0,
+      "hourlyPath": "assets/frames-hourly/rain-025.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-025.bin",
+      "hourlyMaximumMm": 5.3
     },
     {
       "leadHour": 26,
@@ -289,7 +367,10 @@
       "validTimeNz": "2026-04-13T02:00:00+12:00",
       "path": "assets/frames/rain-026.png",
       "valuesPath": "assets/values/rain-026.bin",
-      "maximumMm": 259.0
+      "maximumMm": 259.0,
+      "hourlyPath": "assets/frames-hourly/rain-026.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-026.bin",
+      "hourlyMaximumMm": 4.8
     },
     {
       "leadHour": 27,
@@ -298,7 +379,10 @@
       "validTimeNz": "2026-04-13T03:00:00+12:00",
       "path": "assets/frames/rain-027.png",
       "valuesPath": "assets/values/rain-027.bin",
-      "maximumMm": 259.0
+      "maximumMm": 259.0,
+      "hourlyPath": "assets/frames-hourly/rain-027.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-027.bin",
+      "hourlyMaximumMm": 7.0
     },
     {
       "leadHour": 28,
@@ -307,7 +391,10 @@
       "validTimeNz": "2026-04-13T04:00:00+12:00",
       "path": "assets/frames/rain-028.png",
       "valuesPath": "assets/values/rain-028.bin",
-      "maximumMm": 259.0
+      "maximumMm": 259.0,
+      "hourlyPath": "assets/frames-hourly/rain-028.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-028.bin",
+      "hourlyMaximumMm": 6.0
     },
     {
       "leadHour": 29,
@@ -316,7 +403,10 @@
       "validTimeNz": "2026-04-13T05:00:00+12:00",
       "path": "assets/frames/rain-029.png",
       "valuesPath": "assets/values/rain-029.bin",
-      "maximumMm": 259.0
+      "maximumMm": 259.0,
+      "hourlyPath": "assets/frames-hourly/rain-029.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-029.bin",
+      "hourlyMaximumMm": 7.1
     },
     {
       "leadHour": 30,
@@ -325,7 +415,10 @@
       "validTimeNz": "2026-04-13T06:00:00+12:00",
       "path": "assets/frames/rain-030.png",
       "valuesPath": "assets/values/rain-030.bin",
-      "maximumMm": 259.0
+      "maximumMm": 259.0,
+      "hourlyPath": "assets/frames-hourly/rain-030.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-030.bin",
+      "hourlyMaximumMm": 13.8
     },
     {
       "leadHour": 31,
@@ -334,7 +427,10 @@
       "validTimeNz": "2026-04-13T07:00:00+12:00",
       "path": "assets/frames/rain-031.png",
       "valuesPath": "assets/values/rain-031.bin",
-      "maximumMm": 259.0
+      "maximumMm": 259.0,
+      "hourlyPath": "assets/frames-hourly/rain-031.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-031.bin",
+      "hourlyMaximumMm": 19.6
     },
     {
       "leadHour": 32,
@@ -343,7 +439,10 @@
       "validTimeNz": "2026-04-13T08:00:00+12:00",
       "path": "assets/frames/rain-032.png",
       "valuesPath": "assets/values/rain-032.bin",
-      "maximumMm": 259.0
+      "maximumMm": 259.0,
+      "hourlyPath": "assets/frames-hourly/rain-032.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-032.bin",
+      "hourlyMaximumMm": 20.8
     },
     {
       "leadHour": 33,
@@ -352,7 +451,10 @@
       "validTimeNz": "2026-04-13T09:00:00+12:00",
       "path": "assets/frames/rain-033.png",
       "valuesPath": "assets/values/rain-033.bin",
-      "maximumMm": 259.0
+      "maximumMm": 259.0,
+      "hourlyPath": "assets/frames-hourly/rain-033.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-033.bin",
+      "hourlyMaximumMm": 24.6
     },
     {
       "leadHour": 34,
@@ -361,7 +463,10 @@
       "validTimeNz": "2026-04-13T10:00:00+12:00",
       "path": "assets/frames/rain-034.png",
       "valuesPath": "assets/values/rain-034.bin",
-      "maximumMm": 259.0
+      "maximumMm": 259.0,
+      "hourlyPath": "assets/frames-hourly/rain-034.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-034.bin",
+      "hourlyMaximumMm": 24.2
     },
     {
       "leadHour": 35,
@@ -370,7 +475,10 @@
       "validTimeNz": "2026-04-13T11:00:00+12:00",
       "path": "assets/frames/rain-035.png",
       "valuesPath": "assets/values/rain-035.bin",
-      "maximumMm": 259.0
+      "maximumMm": 259.0,
+      "hourlyPath": "assets/frames-hourly/rain-035.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-035.bin",
+      "hourlyMaximumMm": 22.1
     },
     {
       "leadHour": 36,
@@ -379,7 +487,10 @@
       "validTimeNz": "2026-04-13T12:00:00+12:00",
       "path": "assets/frames/rain-036.png",
       "valuesPath": "assets/values/rain-036.bin",
-      "maximumMm": 259.0
+      "maximumMm": 259.0,
+      "hourlyPath": "assets/frames-hourly/rain-036.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-036.bin",
+      "hourlyMaximumMm": 30.4
     },
     {
       "leadHour": 37,
@@ -388,7 +499,10 @@
       "validTimeNz": "2026-04-13T13:00:00+12:00",
       "path": "assets/frames/rain-037.png",
       "valuesPath": "assets/values/rain-037.bin",
-      "maximumMm": 259.9
+      "maximumMm": 259.9,
+      "hourlyPath": "assets/frames-hourly/rain-037.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-037.bin",
+      "hourlyMaximumMm": 20.9
     },
     {
       "leadHour": 38,
@@ -397,7 +511,10 @@
       "validTimeNz": "2026-04-13T14:00:00+12:00",
       "path": "assets/frames/rain-038.png",
       "valuesPath": "assets/values/rain-038.bin",
-      "maximumMm": 261.7
+      "maximumMm": 261.7,
+      "hourlyPath": "assets/frames-hourly/rain-038.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-038.bin",
+      "hourlyMaximumMm": 18.7
     },
     {
       "leadHour": 39,
@@ -406,7 +523,10 @@
       "validTimeNz": "2026-04-13T15:00:00+12:00",
       "path": "assets/frames/rain-039.png",
       "valuesPath": "assets/values/rain-039.bin",
-      "maximumMm": 263.6
+      "maximumMm": 263.6,
+      "hourlyPath": "assets/frames-hourly/rain-039.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-039.bin",
+      "hourlyMaximumMm": 21.7
     },
     {
       "leadHour": 40,
@@ -415,7 +535,10 @@
       "validTimeNz": "2026-04-13T16:00:00+12:00",
       "path": "assets/frames/rain-040.png",
       "valuesPath": "assets/values/rain-040.bin",
-      "maximumMm": 265.1
+      "maximumMm": 265.1,
+      "hourlyPath": "assets/frames-hourly/rain-040.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-040.bin",
+      "hourlyMaximumMm": 49.1
     },
     {
       "leadHour": 41,
@@ -424,7 +547,10 @@
       "validTimeNz": "2026-04-13T17:00:00+12:00",
       "path": "assets/frames/rain-041.png",
       "valuesPath": "assets/values/rain-041.bin",
-      "maximumMm": 266.8
+      "maximumMm": 266.8,
+      "hourlyPath": "assets/frames-hourly/rain-041.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-041.bin",
+      "hourlyMaximumMm": 31.0
     },
     {
       "leadHour": 42,
@@ -433,7 +559,10 @@
       "validTimeNz": "2026-04-13T18:00:00+12:00",
       "path": "assets/frames/rain-042.png",
       "valuesPath": "assets/values/rain-042.bin",
-      "maximumMm": 266.8
+      "maximumMm": 266.8,
+      "hourlyPath": "assets/frames-hourly/rain-042.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-042.bin",
+      "hourlyMaximumMm": 20.6
     },
     {
       "leadHour": 43,
@@ -442,7 +571,10 @@
       "validTimeNz": "2026-04-13T19:00:00+12:00",
       "path": "assets/frames/rain-043.png",
       "valuesPath": "assets/values/rain-043.bin",
-      "maximumMm": 266.8
+      "maximumMm": 266.8,
+      "hourlyPath": "assets/frames-hourly/rain-043.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-043.bin",
+      "hourlyMaximumMm": 40.7
     },
     {
       "leadHour": 44,
@@ -451,7 +583,10 @@
       "validTimeNz": "2026-04-13T20:00:00+12:00",
       "path": "assets/frames/rain-044.png",
       "valuesPath": "assets/values/rain-044.bin",
-      "maximumMm": 266.8
+      "maximumMm": 266.8,
+      "hourlyPath": "assets/frames-hourly/rain-044.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-044.bin",
+      "hourlyMaximumMm": 28.1
     },
     {
       "leadHour": 45,
@@ -460,7 +595,10 @@
       "validTimeNz": "2026-04-13T21:00:00+12:00",
       "path": "assets/frames/rain-045.png",
       "valuesPath": "assets/values/rain-045.bin",
-      "maximumMm": 266.9
+      "maximumMm": 266.9,
+      "hourlyPath": "assets/frames-hourly/rain-045.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-045.bin",
+      "hourlyMaximumMm": 26.5
     },
     {
       "leadHour": 46,
@@ -469,7 +607,10 @@
       "validTimeNz": "2026-04-13T22:00:00+12:00",
       "path": "assets/frames/rain-046.png",
       "valuesPath": "assets/values/rain-046.bin",
-      "maximumMm": 267.0
+      "maximumMm": 267.0,
+      "hourlyPath": "assets/frames-hourly/rain-046.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-046.bin",
+      "hourlyMaximumMm": 29.5
     },
     {
       "leadHour": 47,
@@ -478,7 +619,10 @@
       "validTimeNz": "2026-04-13T23:00:00+12:00",
       "path": "assets/frames/rain-047.png",
       "valuesPath": "assets/values/rain-047.bin",
-      "maximumMm": 268.2
+      "maximumMm": 268.2,
+      "hourlyPath": "assets/frames-hourly/rain-047.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-047.bin",
+      "hourlyMaximumMm": 30.8
     },
     {
       "leadHour": 48,
@@ -487,7 +631,10 @@
       "validTimeNz": "2026-04-14T00:00:00+12:00",
       "path": "assets/frames/rain-048.png",
       "valuesPath": "assets/values/rain-048.bin",
-      "maximumMm": 268.3
+      "maximumMm": 268.3,
+      "hourlyPath": "assets/frames-hourly/rain-048.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-048.bin",
+      "hourlyMaximumMm": 25.8
     },
     {
       "leadHour": 49,
@@ -496,7 +643,10 @@
       "validTimeNz": "2026-04-14T01:00:00+12:00",
       "path": "assets/frames/rain-049.png",
       "valuesPath": "assets/values/rain-049.bin",
-      "maximumMm": 268.8
+      "maximumMm": 268.8,
+      "hourlyPath": "assets/frames-hourly/rain-049.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-049.bin",
+      "hourlyMaximumMm": 30.9
     },
     {
       "leadHour": 50,
@@ -505,7 +655,10 @@
       "validTimeNz": "2026-04-14T02:00:00+12:00",
       "path": "assets/frames/rain-050.png",
       "valuesPath": "assets/values/rain-050.bin",
-      "maximumMm": 270.2
+      "maximumMm": 270.2,
+      "hourlyPath": "assets/frames-hourly/rain-050.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-050.bin",
+      "hourlyMaximumMm": 24.8
     },
     {
       "leadHour": 51,
@@ -514,7 +667,10 @@
       "validTimeNz": "2026-04-14T03:00:00+12:00",
       "path": "assets/frames/rain-051.png",
       "valuesPath": "assets/values/rain-051.bin",
-      "maximumMm": 274.7
+      "maximumMm": 274.7,
+      "hourlyPath": "assets/frames-hourly/rain-051.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-051.bin",
+      "hourlyMaximumMm": 26.3
     },
     {
       "leadHour": 52,
@@ -523,7 +679,10 @@
       "validTimeNz": "2026-04-14T04:00:00+12:00",
       "path": "assets/frames/rain-052.png",
       "valuesPath": "assets/values/rain-052.bin",
-      "maximumMm": 275.4
+      "maximumMm": 275.4,
+      "hourlyPath": "assets/frames-hourly/rain-052.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-052.bin",
+      "hourlyMaximumMm": 22.0
     },
     {
       "leadHour": 53,
@@ -532,7 +691,10 @@
       "validTimeNz": "2026-04-14T05:00:00+12:00",
       "path": "assets/frames/rain-053.png",
       "valuesPath": "assets/values/rain-053.bin",
-      "maximumMm": 275.9
+      "maximumMm": 275.9,
+      "hourlyPath": "assets/frames-hourly/rain-053.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-053.bin",
+      "hourlyMaximumMm": 22.1
     },
     {
       "leadHour": 54,
@@ -541,7 +703,10 @@
       "validTimeNz": "2026-04-14T06:00:00+12:00",
       "path": "assets/frames/rain-054.png",
       "valuesPath": "assets/values/rain-054.bin",
-      "maximumMm": 275.9
+      "maximumMm": 275.9,
+      "hourlyPath": "assets/frames-hourly/rain-054.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-054.bin",
+      "hourlyMaximumMm": 25.9
     },
     {
       "leadHour": 55,
@@ -550,7 +715,10 @@
       "validTimeNz": "2026-04-14T07:00:00+12:00",
       "path": "assets/frames/rain-055.png",
       "valuesPath": "assets/values/rain-055.bin",
-      "maximumMm": 275.9
+      "maximumMm": 275.9,
+      "hourlyPath": "assets/frames-hourly/rain-055.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-055.bin",
+      "hourlyMaximumMm": 35.2
     },
     {
       "leadHour": 56,
@@ -559,7 +727,10 @@
       "validTimeNz": "2026-04-14T08:00:00+12:00",
       "path": "assets/frames/rain-056.png",
       "valuesPath": "assets/values/rain-056.bin",
-      "maximumMm": 275.9
+      "maximumMm": 275.9,
+      "hourlyPath": "assets/frames-hourly/rain-056.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-056.bin",
+      "hourlyMaximumMm": 38.5
     },
     {
       "leadHour": 57,
@@ -568,7 +739,10 @@
       "validTimeNz": "2026-04-14T09:00:00+12:00",
       "path": "assets/frames/rain-057.png",
       "valuesPath": "assets/values/rain-057.bin",
-      "maximumMm": 275.9
+      "maximumMm": 275.9,
+      "hourlyPath": "assets/frames-hourly/rain-057.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-057.bin",
+      "hourlyMaximumMm": 28.1
     },
     {
       "leadHour": 58,
@@ -577,7 +751,10 @@
       "validTimeNz": "2026-04-14T10:00:00+12:00",
       "path": "assets/frames/rain-058.png",
       "valuesPath": "assets/values/rain-058.bin",
-      "maximumMm": 275.9
+      "maximumMm": 275.9,
+      "hourlyPath": "assets/frames-hourly/rain-058.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-058.bin",
+      "hourlyMaximumMm": 31.3
     },
     {
       "leadHour": 59,
@@ -586,7 +763,10 @@
       "validTimeNz": "2026-04-14T11:00:00+12:00",
       "path": "assets/frames/rain-059.png",
       "valuesPath": "assets/values/rain-059.bin",
-      "maximumMm": 275.9
+      "maximumMm": 275.9,
+      "hourlyPath": "assets/frames-hourly/rain-059.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-059.bin",
+      "hourlyMaximumMm": 19.1
     },
     {
       "leadHour": 60,
@@ -595,7 +775,10 @@
       "validTimeNz": "2026-04-14T12:00:00+12:00",
       "path": "assets/frames/rain-060.png",
       "valuesPath": "assets/values/rain-060.bin",
-      "maximumMm": 275.9
+      "maximumMm": 275.9,
+      "hourlyPath": "assets/frames-hourly/rain-060.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-060.bin",
+      "hourlyMaximumMm": 20.9
     },
     {
       "leadHour": 61,
@@ -604,7 +787,10 @@
       "validTimeNz": "2026-04-14T13:00:00+12:00",
       "path": "assets/frames/rain-061.png",
       "valuesPath": "assets/values/rain-061.bin",
-      "maximumMm": 275.9
+      "maximumMm": 275.9,
+      "hourlyPath": "assets/frames-hourly/rain-061.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-061.bin",
+      "hourlyMaximumMm": 17.5
     },
     {
       "leadHour": 62,
@@ -613,7 +799,10 @@
       "validTimeNz": "2026-04-14T14:00:00+12:00",
       "path": "assets/frames/rain-062.png",
       "valuesPath": "assets/values/rain-062.bin",
-      "maximumMm": 275.9
+      "maximumMm": 275.9,
+      "hourlyPath": "assets/frames-hourly/rain-062.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-062.bin",
+      "hourlyMaximumMm": 17.1
     },
     {
       "leadHour": 63,
@@ -622,7 +811,10 @@
       "validTimeNz": "2026-04-14T15:00:00+12:00",
       "path": "assets/frames/rain-063.png",
       "valuesPath": "assets/values/rain-063.bin",
-      "maximumMm": 275.9
+      "maximumMm": 275.9,
+      "hourlyPath": "assets/frames-hourly/rain-063.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-063.bin",
+      "hourlyMaximumMm": 18.8
     },
     {
       "leadHour": 64,
@@ -631,7 +823,10 @@
       "validTimeNz": "2026-04-14T16:00:00+12:00",
       "path": "assets/frames/rain-064.png",
       "valuesPath": "assets/values/rain-064.bin",
-      "maximumMm": 276.4
+      "maximumMm": 276.4,
+      "hourlyPath": "assets/frames-hourly/rain-064.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-064.bin",
+      "hourlyMaximumMm": 15.3
     },
     {
       "leadHour": 65,
@@ -640,7 +835,10 @@
       "validTimeNz": "2026-04-14T17:00:00+12:00",
       "path": "assets/frames/rain-065.png",
       "valuesPath": "assets/values/rain-065.bin",
-      "maximumMm": 277.1
+      "maximumMm": 277.1,
+      "hourlyPath": "assets/frames-hourly/rain-065.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-065.bin",
+      "hourlyMaximumMm": 15.5
     },
     {
       "leadHour": 66,
@@ -649,7 +847,10 @@
       "validTimeNz": "2026-04-14T18:00:00+12:00",
       "path": "assets/frames/rain-066.png",
       "valuesPath": "assets/values/rain-066.bin",
-      "maximumMm": 277.5
+      "maximumMm": 277.5,
+      "hourlyPath": "assets/frames-hourly/rain-066.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-066.bin",
+      "hourlyMaximumMm": 17.6
     },
     {
       "leadHour": 67,
@@ -658,7 +859,10 @@
       "validTimeNz": "2026-04-14T19:00:00+12:00",
       "path": "assets/frames/rain-067.png",
       "valuesPath": "assets/values/rain-067.bin",
-      "maximumMm": 278.0
+      "maximumMm": 278.0,
+      "hourlyPath": "assets/frames-hourly/rain-067.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-067.bin",
+      "hourlyMaximumMm": 14.1
     },
     {
       "leadHour": 68,
@@ -667,7 +871,10 @@
       "validTimeNz": "2026-04-14T20:00:00+12:00",
       "path": "assets/frames/rain-068.png",
       "valuesPath": "assets/values/rain-068.bin",
-      "maximumMm": 278.0
+      "maximumMm": 278.0,
+      "hourlyPath": "assets/frames-hourly/rain-068.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-068.bin",
+      "hourlyMaximumMm": 13.7
     },
     {
       "leadHour": 69,
@@ -676,7 +883,10 @@
       "validTimeNz": "2026-04-14T21:00:00+12:00",
       "path": "assets/frames/rain-069.png",
       "valuesPath": "assets/values/rain-069.bin",
-      "maximumMm": 278.0
+      "maximumMm": 278.0,
+      "hourlyPath": "assets/frames-hourly/rain-069.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-069.bin",
+      "hourlyMaximumMm": 21.7
     },
     {
       "leadHour": 70,
@@ -685,7 +895,10 @@
       "validTimeNz": "2026-04-14T22:00:00+12:00",
       "path": "assets/frames/rain-070.png",
       "valuesPath": "assets/values/rain-070.bin",
-      "maximumMm": 278.2
+      "maximumMm": 278.2,
+      "hourlyPath": "assets/frames-hourly/rain-070.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-070.bin",
+      "hourlyMaximumMm": 27.9
     },
     {
       "leadHour": 71,
@@ -694,7 +907,10 @@
       "validTimeNz": "2026-04-14T23:00:00+12:00",
       "path": "assets/frames/rain-071.png",
       "valuesPath": "assets/values/rain-071.bin",
-      "maximumMm": 279.6
+      "maximumMm": 279.6,
+      "hourlyPath": "assets/frames-hourly/rain-071.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-071.bin",
+      "hourlyMaximumMm": 20.1
     },
     {
       "leadHour": 72,
@@ -703,7 +919,10 @@
       "validTimeNz": "2026-04-15T00:00:00+12:00",
       "path": "assets/frames/rain-072.png",
       "valuesPath": "assets/values/rain-072.bin",
-      "maximumMm": 280.9
+      "maximumMm": 280.9,
+      "hourlyPath": "assets/frames-hourly/rain-072.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-072.bin",
+      "hourlyMaximumMm": 16.2
     },
     {
       "leadHour": 73,
@@ -712,7 +931,10 @@
       "validTimeNz": "2026-04-15T01:00:00+12:00",
       "path": "assets/frames/rain-073.png",
       "valuesPath": "assets/values/rain-073.bin",
-      "maximumMm": 281.3
+      "maximumMm": 281.3,
+      "hourlyPath": "assets/frames-hourly/rain-073.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-073.bin",
+      "hourlyMaximumMm": 14.9
     },
     {
       "leadHour": 74,
@@ -721,7 +943,10 @@
       "validTimeNz": "2026-04-15T02:00:00+12:00",
       "path": "assets/frames/rain-074.png",
       "valuesPath": "assets/values/rain-074.bin",
-      "maximumMm": 281.3
+      "maximumMm": 281.3,
+      "hourlyPath": "assets/frames-hourly/rain-074.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-074.bin",
+      "hourlyMaximumMm": 12.3
     },
     {
       "leadHour": 75,
@@ -730,7 +955,10 @@
       "validTimeNz": "2026-04-15T03:00:00+12:00",
       "path": "assets/frames/rain-075.png",
       "valuesPath": "assets/values/rain-075.bin",
-      "maximumMm": 283.7
+      "maximumMm": 283.7,
+      "hourlyPath": "assets/frames-hourly/rain-075.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-075.bin",
+      "hourlyMaximumMm": 13.0
     },
     {
       "leadHour": 76,
@@ -739,7 +967,10 @@
       "validTimeNz": "2026-04-15T04:00:00+12:00",
       "path": "assets/frames/rain-076.png",
       "valuesPath": "assets/values/rain-076.bin",
-      "maximumMm": 286.9
+      "maximumMm": 286.9,
+      "hourlyPath": "assets/frames-hourly/rain-076.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-076.bin",
+      "hourlyMaximumMm": 13.9
     },
     {
       "leadHour": 77,
@@ -748,7 +979,10 @@
       "validTimeNz": "2026-04-15T05:00:00+12:00",
       "path": "assets/frames/rain-077.png",
       "valuesPath": "assets/values/rain-077.bin",
-      "maximumMm": 292.7
+      "maximumMm": 292.7,
+      "hourlyPath": "assets/frames-hourly/rain-077.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-077.bin",
+      "hourlyMaximumMm": 17.4
     },
     {
       "leadHour": 78,
@@ -757,7 +991,10 @@
       "validTimeNz": "2026-04-15T06:00:00+12:00",
       "path": "assets/frames/rain-078.png",
       "valuesPath": "assets/values/rain-078.bin",
-      "maximumMm": 294.8
+      "maximumMm": 294.8,
+      "hourlyPath": "assets/frames-hourly/rain-078.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-078.bin",
+      "hourlyMaximumMm": 12.5
     },
     {
       "leadHour": 79,
@@ -766,7 +1003,10 @@
       "validTimeNz": "2026-04-15T07:00:00+12:00",
       "path": "assets/frames/rain-079.png",
       "valuesPath": "assets/values/rain-079.bin",
-      "maximumMm": 294.9
+      "maximumMm": 294.9,
+      "hourlyPath": "assets/frames-hourly/rain-079.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-079.bin",
+      "hourlyMaximumMm": 17.3
     },
     {
       "leadHour": 80,
@@ -775,7 +1015,10 @@
       "validTimeNz": "2026-04-15T08:00:00+12:00",
       "path": "assets/frames/rain-080.png",
       "valuesPath": "assets/values/rain-080.bin",
-      "maximumMm": 295.3
+      "maximumMm": 295.3,
+      "hourlyPath": "assets/frames-hourly/rain-080.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-080.bin",
+      "hourlyMaximumMm": 18.4
     },
     {
       "leadHour": 81,
@@ -784,7 +1027,10 @@
       "validTimeNz": "2026-04-15T09:00:00+12:00",
       "path": "assets/frames/rain-081.png",
       "valuesPath": "assets/values/rain-081.bin",
-      "maximumMm": 295.5
+      "maximumMm": 295.5,
+      "hourlyPath": "assets/frames-hourly/rain-081.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-081.bin",
+      "hourlyMaximumMm": 14.5
     },
     {
       "leadHour": 82,
@@ -793,7 +1039,10 @@
       "validTimeNz": "2026-04-15T10:00:00+12:00",
       "path": "assets/frames/rain-082.png",
       "valuesPath": "assets/values/rain-082.bin",
-      "maximumMm": 296.0
+      "maximumMm": 296.0,
+      "hourlyPath": "assets/frames-hourly/rain-082.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-082.bin",
+      "hourlyMaximumMm": 7.3
     },
     {
       "leadHour": 83,
@@ -802,7 +1051,10 @@
       "validTimeNz": "2026-04-15T11:00:00+12:00",
       "path": "assets/frames/rain-083.png",
       "valuesPath": "assets/values/rain-083.bin",
-      "maximumMm": 296.2
+      "maximumMm": 296.2,
+      "hourlyPath": "assets/frames-hourly/rain-083.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-083.bin",
+      "hourlyMaximumMm": 6.8
     },
     {
       "leadHour": 84,
@@ -811,7 +1063,52 @@
       "validTimeNz": "2026-04-15T12:00:00+12:00",
       "path": "assets/frames/rain-084.png",
       "valuesPath": "assets/values/rain-084.bin",
-      "maximumMm": 296.2
+      "maximumMm": 296.2,
+      "hourlyPath": "assets/frames-hourly/rain-084.png",
+      "hourlyValuesPath": "assets/values-hourly/rain-084.bin",
+      "hourlyMaximumMm": 7.9
     }
-  ]
+  ],
+  "variables": {
+    "cumulative": {
+      "label": "Cumulative rainfall",
+      "layerSubtitle": "Cumulative total",
+      "popupLabel": "Cumulative rainfall",
+      "legendTitle": "Cumulative rainfall",
+      "legendStopsMm": [
+        0,
+        50,
+        100,
+        150,
+        200,
+        250,
+        300
+      ],
+      "legendGradient": "linear-gradient(90deg, #fffa9b 0%, #ffca4e 16.67%, #f5684c 33.33%, #e74577 50%, #b73fb2 66.67%, #624fcb 83.33%, #1939a9 100%)",
+      "pathKey": "path",
+      "valuesPathKey": "valuesPath",
+      "maximumKey": "maximumMm"
+    },
+    "hourly": {
+      "label": "Hourly rainfall",
+      "layerSubtitle": "Rainfall during this hour",
+      "popupLabel": "Hourly rainfall",
+      "legendTitle": "Hourly rainfall",
+      "legendStopsMm": [
+        0,
+        1,
+        2,
+        5,
+        10,
+        20,
+        30,
+        50
+      ],
+      "legendGradient": "linear-gradient(90deg, #fffabe 0%, #ffe178 14.29%, #ffb547 28.57%, #f67049 42.86%, #e74577 57.14%, #b73fb2 71.43%, #624fcb 85.71%, #1939a9 100%)",
+      "pathKey": "hourlyPath",
+      "valuesPathKey": "hourlyValuesPath",
+      "maximumKey": "hourlyMaximumMm"
+    }
+  },
+  "hourlyMaximumMm": 49.1
 }

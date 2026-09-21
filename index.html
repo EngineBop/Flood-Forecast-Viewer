@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Interactive proof of concept for viewing cumulative flood forecast rainfall through time." />
+    <meta name="description" content="Interactive proof of concept for viewing cumulative and hourly flood forecast rainfall through time." />
     <title>Flood forecast rainfall viewer</title>
     <link rel="preconnect" href="https://unpkg.com" />
     <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@6.9.0/dist/maplibre-gl.css" />
@@ -30,7 +30,8 @@
           <label>
             <span>Variable</span>
             <select id="variable-select" aria-label="Forecast variable">
-              <option>Cumulative rainfall</option>
+              <option value="cumulative">Cumulative rainfall</option>
+              <option value="hourly">Hourly rainfall</option>
             </select>
           </label>
         </div>
@@ -61,7 +62,7 @@
         <div class="layer-row">
           <div>
             <strong>Forecast rainfall</strong>
-            <small>Cumulative total</small>
+            <small id="layer-mode">Cumulative total</small>
           </div>
           <label class="switch"><input id="rain-toggle" type="checkbox" checked /><span></span></label>
         </div>
@@ -92,11 +93,11 @@
 
       <section class="legend-card glass-panel" aria-label="Rainfall legend">
         <div class="legend-heading">
-          <span>Cumulative rainfall</span>
+          <span id="legend-title">Cumulative rainfall</span>
           <strong>mm</strong>
         </div>
         <div class="colour-ramp" aria-hidden="true"></div>
-        <div class="legend-ticks" aria-hidden="true">
+        <div id="legend-ticks" class="legend-ticks" aria-hidden="true">
           <span>0</span><span>50</span><span>100</span><span>150</span><span>200</span><span>250</span><span>300+</span>
         </div>
       </section>
