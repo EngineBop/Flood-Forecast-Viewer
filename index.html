@@ -11,6 +11,10 @@
   <body>
     <main class="app-shell">
       <div id="map" aria-label="Interactive forecast rainfall map"></div>
+      <svg id="catchment-overlay" class="catchment-overlay" aria-hidden="true">
+        <path id="catchment-shadow-path" class="catchment-shadow-path"></path>
+        <path id="catchment-path" class="catchment-path"></path>
+      </svg>
 
       <header class="topbar glass-panel">
         <div class="brand-lockup">
@@ -78,7 +82,7 @@
         <div class="layer-row">
           <div>
             <strong>Surface catchments</strong>
-            <small>BOPRC public layer</small>
+            <small id="catchment-status">Loading BOPRC catchments…</small>
           </div>
           <label class="switch"><input id="catchment-toggle" type="checkbox" checked /><span></span></label>
         </div>

@@ -26,6 +26,11 @@ button, select { color: var(--ink); }
 
 .app-shell { position: relative; isolation: isolate; }
 #map { position: absolute; inset: 0; background: #0a1c2b; }
+.catchment-overlay { position: absolute; z-index: 3; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: hidden; }
+.catchment-overlay.hidden { display: none; }
+.catchment-shadow-path, .catchment-path { fill: none; stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+.catchment-shadow-path { stroke: rgba(0, 0, 0, .78); stroke-width: 3px; }
+.catchment-path { stroke: rgba(99, 224, 242, .98); stroke-width: 1.35px; }
 
 .glass-panel {
   background: linear-gradient(140deg, rgba(13, 31, 46, .94), rgba(6, 16, 26, .82));

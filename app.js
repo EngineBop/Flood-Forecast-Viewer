@@ -16,10 +16,14 @@ const els = {
   layersButton: document.querySelector("#layers-button"),
   comparisonButton: document.querySelector("#comparison-button"),
   comparisonCrosshair: document.querySelector("#comparison-crosshair"),
+  catchmentOverlay: document.querySelector("#catchment-overlay"),
+  catchmentShadowPath: document.querySelector("#catchment-shadow-path"),
+  catchmentPath: document.querySelector("#catchment-path"),
   closeLayers: document.querySelector("#close-layers"),
   layersPanel: document.querySelector("#layers-panel"),
   rainToggle: document.querySelector("#rain-toggle"),
   catchmentToggle: document.querySelector("#catchment-toggle"),
+  catchmentStatus: document.querySelector("#catchment-status"),
   labelToggle: document.querySelector("#label-toggle"),
   opacity: document.querySelector("#opacity-slider"),
   opacityOutput: document.querySelector("#opacity-output"),
@@ -53,6 +57,8 @@ const state = {
   popup: null,
   comparisonMode: true,
   catchmentData: null,
+  catchmentRings: null,
+  catchmentDrawFrame: null,
   displayStyle: "smooth",
 };
 
@@ -391,25 +397,49 @@ async function addCatchments() {
     const response = await fetch(url);
     if (!response.ok) throw new Error(`Catchment request failed: ${response.status}`);
     const geojson = await response.json();
+    if (geojson.type !== "FeatureCollection" || !Array.isArray(geojson.features)) {
+      throw new Error(geojson.error?.message || "Catchment service returned no features");
+    }
     state.catchmentData = geojson;
-    map.addSource("catchments", { type: "geojson", data: geojson });
-    map.addLayer({
-      id: "catchment-shadow",
-      type: "line",
-      source: "catchments",
-      paint: { "line-color": "rgba(0, 0, 0, .7)", "line-width": ["interpolate", ["linear"], ["zoom"], 5, 1.2, 10, 3] },
+    state.catchmentRings = geojson.features.flatMap((feature) => {
+      const geometry = feature.geometry;
+      if (!geometry) return [];
+      if (geometry.type === "Polygon") return geometry.coordinates;
+      if (geometry.type === "MultiPolygon") return geometry.coordinates.flat();
+      return [];
     });
-    map.addLayer({
-      id: "catchments",
-      type: "line",
-      source: "catchments",
-      paint: { "line-color": "rgba(255, 255, 255, .83)", "line-width": ["interpolate", ["linear"], ["zoom"], 5, .55, 10, 1.35] },
-    });
+    drawCatchments();
+    els.catchmentStatus.textContent = `${geojson.features.length.toLocaleString()} catchments shown`;
   } catch (error) {
     console.warn("Catchment layer unavailable", error);
     els.catchmentToggle.checked = false;
     els.catchmentToggle.disabled = true;
+    els.catchmentStatus.textContent = "Catchment layer unavailable";
   }
+}
+
+function drawCatchments() {
+  if (!state.mapReady || !state.catchmentRings || !els.catchmentToggle.checked) return;
+  const commands = [];
+  for (const ring of state.catchmentRings) {
+    for (let index = 0; index < ring.length; index += 1) {
+      const coordinate = ring[index];
+      const point = map.project(coordinate);
+      commands.push(`${index === 0 ? "M" : "L"}${point.x.toFixed(1)} ${point.y.toFixed(1)}`);
+    }
+    commands.push("Z");
+  }
+  const path = commands.join(" ");
+  els.catchmentShadowPath.setAttribute("d", path);
+  els.catchmentPath.setAttribute("d", path);
+}
+
+function scheduleCatchmentDraw() {
+  if (state.catchmentDrawFrame !== null) return;
+  state.catchmentDrawFrame = window.requestAnimationFrame(() => {
+    state.catchmentDrawFrame = null;
+    drawCatchments();
+  });
 }
 
 async function initialise() {
@@ -493,19 +523,20 @@ els.closeLayers.addEventListener("click", () => {
 els.closeComparison.addEventListener("click", () => {
   setComparisonMode(false);
 });
+map.on("move", scheduleCatchmentDraw);
 map.on("moveend", updateComparisonFromCenter);
+map.on("resize", scheduleCatchmentDraw);
 els.rainToggle.addEventListener("change", (event) => {
   setVisibility("rain-a", event.target.checked);
   setVisibility("rain-b", event.target.checked);
 });
 els.catchmentToggle.addEventListener("change", (event) => {
   const visible = event.target.checked;
-  const source = map.getSource("catchments");
-  if (source && state.catchmentData) {
-    source.setData(visible ? state.catchmentData : { type: "FeatureCollection", features: [] });
+  els.catchmentOverlay.classList.toggle("hidden", !visible);
+  if (visible) drawCatchments();
+  if (state.catchmentData) {
+    els.catchmentStatus.textContent = `${state.catchmentData.features.length.toLocaleString()} catchments ${visible ? "shown" : "hidden"}`;
   }
-  setVisibility("catchments", visible);
-  setVisibility("catchment-shadow", visible);
 });
 els.labelToggle.addEventListener("change", (event) => setVisibility("labels", event.target.checked));
 els.opacity.addEventListener("input", (event) => {
