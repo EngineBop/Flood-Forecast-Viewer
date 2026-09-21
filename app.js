@@ -392,7 +392,7 @@ map.on("click", async (event) => {
 });
 
 async function addCatchments() {
-  const url = "https://gis.boprc.govt.nz/server2/rest/services/BayOfPlentyMaps/Environment/MapServer/170/query?where=1%3D1&outFields=Catchment%2CPrimaryCatchment&returnGeometry=true&outSR=4326&f=geojson";
+  const url = "assets/catchments.geojson";
   try {
     const response = await fetch(url);
     if (!response.ok) throw new Error(`Catchment request failed: ${response.status}`);
