@@ -36,11 +36,19 @@
             </select>
           </label>
         </div>
-        <button id="layers-button" class="icon-button" type="button" aria-expanded="true" aria-controls="layers-panel">
-          <span class="layers-glyph" aria-hidden="true"></span>
-          Layers
-        </button>
+        <div class="topbar-actions">
+          <button id="comparison-button" class="icon-button active" type="button" aria-pressed="true" aria-controls="comparison-panel">
+            <span class="crosshair-glyph" aria-hidden="true"></span>
+            Compare
+          </button>
+          <button id="layers-button" class="icon-button" type="button" aria-expanded="true" aria-controls="layers-panel">
+            <span class="layers-glyph" aria-hidden="true"></span>
+            Layers
+          </button>
+        </div>
       </header>
+
+      <div id="comparison-crosshair" class="comparison-crosshair" aria-hidden="true"></div>
 
       <aside id="status-card" class="status-card glass-panel" aria-live="polite">
         <p class="status-label">VALID TIME · NZST</p>
@@ -85,6 +93,11 @@
           <span><strong>Rainfall opacity</strong><output id="opacity-output">100%</output></span>
           <input id="opacity-slider" type="range" min="20" max="100" value="100" />
         </label>
+        <div class="resampling-control" role="group" aria-label="Rainfall display style">
+          <span>Rainfall display</span>
+          <button class="segmented active" data-display-style="smooth" type="button">Smooth</button>
+          <button class="segmented" data-display-style="grid" type="button">Grid cells</button>
+        </div>
         <div class="basemap-control" role="group" aria-label="Basemap">
           <span>Basemap</span>
           <button class="segmented active" data-basemap="imagery" type="button">Imagery</button>

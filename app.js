@@ -14,6 +14,8 @@ const els = {
   timelineCurrent: document.querySelector("#timeline-current"),
   timelineEnd: document.querySelector("#timeline-end"),
   layersButton: document.querySelector("#layers-button"),
+  comparisonButton: document.querySelector("#comparison-button"),
+  comparisonCrosshair: document.querySelector("#comparison-crosshair"),
   closeLayers: document.querySelector("#close-layers"),
   layersPanel: document.querySelector("#layers-panel"),
   rainToggle: document.querySelector("#rain-toggle"),
@@ -49,6 +51,9 @@ const state = {
   selectedCell: null,
   comparisonRequest: 0,
   popup: null,
+  comparisonMode: true,
+  catchmentData: null,
+  displayStyle: "smooth",
 };
 
 const style = {
@@ -126,7 +131,11 @@ function currentFrames() {
 }
 
 function frameImageUrl(frame, variableKey = state.variable) {
-  const path = frame[state.forecast.variables[variableKey].pathKey];
+  const config = state.forecast.variables[variableKey];
+  const pathKey = state.displayStyle === "smooth" && config.smoothPathKey
+    ? config.smoothPathKey
+    : config.pathKey;
+  const path = frame[pathKey] || frame[config.pathKey];
   return `${path}?v=${encodeURIComponent(state.forecast.dataVersion || "1")}`;
 }
 
@@ -184,7 +193,7 @@ async function showFrame(index, { immediate = false } = {}) {
   const progress = (state.index / (total - 1)) * 100;
   els.slider.style.setProperty("--progress", `${progress}%`);
   preload(state.index);
-  if (state.selectedCell) void refreshComparison();
+  if (state.selectedCell && state.comparisonMode) void refreshComparison();
 }
 
 function stopPlayback() {
@@ -266,7 +275,7 @@ function displayReading(value) {
 }
 
 async function refreshComparison() {
-  if (!state.selectedCell) return;
+  if (!state.selectedCell || !state.comparisonMode) return;
   const request = ++state.comparisonRequest;
   const frameIndex = state.index;
   const { row, column, lng, lat } = state.selectedCell;
@@ -309,6 +318,38 @@ async function refreshComparison() {
   els.comparisonPanel.classList.remove("hidden");
 }
 
+function updateComparisonFromCenter() {
+  if (!state.comparisonMode || !state.forecast || !state.mapReady) return;
+  const crosshairRect = els.comparisonCrosshair.getBoundingClientRect();
+  const mapRect = map.getContainer().getBoundingClientRect();
+  const center = map.unproject([
+    crosshairRect.left + crosshairRect.width / 2 - mapRect.left,
+    crosshairRect.top + crosshairRect.height / 2 - mapRect.top,
+  ]);
+  const grid = state.forecast.grid;
+  const [easting, northing] = lonLatToNztm(center.lng, center.lat);
+  const column = Math.floor((easting - grid.xMin) / grid.cellSize);
+  const row = Math.floor((grid.yMax - northing) / grid.cellSize);
+  if (column < 0 || row < 0 || column >= grid.width || row >= grid.height) {
+    state.selectedCell = null;
+    els.comparisonHelp.hidden = false;
+    els.comparisonHelp.textContent = "Move the crosshair onto the rainfall grid to compare all three models.";
+    els.comparisonContent.classList.add("hidden");
+    return;
+  }
+  state.selectedCell = { row, column, lng: center.lng, lat: center.lat };
+  void refreshComparison();
+}
+
+function setComparisonMode(enabled) {
+  state.comparisonMode = enabled;
+  els.comparisonButton.classList.toggle("active", enabled);
+  els.comparisonButton.setAttribute("aria-pressed", String(enabled));
+  els.comparisonCrosshair.classList.toggle("hidden", !enabled);
+  els.comparisonPanel.classList.toggle("hidden", !enabled);
+  if (enabled) updateComparisonFromCenter();
+}
+
 function buildRainfallPopup(value, frame) {
   const container = document.createElement("div");
   container.className = "rainfall-popup";
@@ -331,13 +372,6 @@ map.on("click", async (event) => {
   if (column < 0 || row < 0 || column >= grid.width || row >= grid.height) return;
   const frameIndex = state.index;
   const frame = currentFrames()[frameIndex];
-  state.selectedCell = {
-    row,
-    column,
-    lng: event.lngLat.lng,
-    lat: event.lngLat.lat,
-  };
-  void refreshComparison();
   try {
     const value = await loadCellValue(frameIndex, row, column);
     if (value === null) return;
@@ -357,6 +391,7 @@ async function addCatchments() {
     const response = await fetch(url);
     if (!response.ok) throw new Error(`Catchment request failed: ${response.status}`);
     const geojson = await response.json();
+    state.catchmentData = geojson;
     map.addSource("catchments", { type: "geojson", data: geojson });
     map.addLayer({
       id: "catchment-shadow",
@@ -420,6 +455,7 @@ async function initialise() {
   await addCatchments();
   map.addLayer({ id: "labels", type: "raster", source: "labels", paint: { "raster-opacity": 0.92 } });
   map.fitBounds([[175.05, -39.55], [178.75, -36.75]], { padding: { top: 95, bottom: 100, left: 40, right: 40 }, duration: 0 });
+  updateComparisonFromCenter();
   await showFrame(0, { immediate: true });
   els.loading.classList.add("done");
 }
@@ -449,20 +485,27 @@ els.layersButton.addEventListener("click", () => {
   const hidden = els.layersPanel.classList.toggle("hidden");
   els.layersButton.setAttribute("aria-expanded", String(!hidden));
 });
+els.comparisonButton.addEventListener("click", () => setComparisonMode(!state.comparisonMode));
 els.closeLayers.addEventListener("click", () => {
   els.layersPanel.classList.add("hidden");
   els.layersButton.setAttribute("aria-expanded", "false");
 });
 els.closeComparison.addEventListener("click", () => {
-  els.comparisonPanel.classList.add("hidden");
+  setComparisonMode(false);
 });
+map.on("moveend", updateComparisonFromCenter);
 els.rainToggle.addEventListener("change", (event) => {
   setVisibility("rain-a", event.target.checked);
   setVisibility("rain-b", event.target.checked);
 });
 els.catchmentToggle.addEventListener("change", (event) => {
-  setVisibility("catchments", event.target.checked);
-  setVisibility("catchment-shadow", event.target.checked);
+  const visible = event.target.checked;
+  const source = map.getSource("catchments");
+  if (source && state.catchmentData) {
+    source.setData(visible ? state.catchmentData : { type: "FeatureCollection", features: [] });
+  }
+  setVisibility("catchments", visible);
+  setVisibility("catchment-shadow", visible);
 });
 els.labelToggle.addEventListener("change", (event) => setVisibility("labels", event.target.checked));
 els.opacity.addEventListener("input", (event) => {
@@ -476,6 +519,24 @@ document.querySelectorAll("[data-basemap]").forEach((button) => {
     setVisibility("imagery", imagery);
     setVisibility("streets", !imagery);
     document.querySelectorAll("[data-basemap]").forEach((item) => item.classList.toggle("active", item === button));
+  });
+});
+document.querySelectorAll("[data-display-style]").forEach((button) => {
+  button.addEventListener("click", () => {
+    state.displayStyle = button.dataset.displayStyle;
+    for (const layerId of ["rain-a", "rain-b"]) {
+      if (map.getLayer(layerId)) {
+        map.setPaintProperty(
+          layerId,
+          "raster-resampling",
+          state.displayStyle === "smooth" ? "linear" : "nearest",
+        );
+      }
+    }
+    document.querySelectorAll("[data-display-style]").forEach((item) => {
+      item.classList.toggle("active", item === button);
+    });
+    void showFrame(state.index, { immediate: true });
   });
 });
 document.addEventListener("keydown", (event) => {

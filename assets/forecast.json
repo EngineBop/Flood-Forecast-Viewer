@@ -46,7 +46,7 @@
     250,
     300
   ],
-  "dataVersion": "three-model-comparison-v1",
+  "dataVersion": "three-model-comparison-v4-smooth",
   "frames": [
     {
       "leadHour": 0,
@@ -1087,7 +1087,8 @@
       "legendGradient": "linear-gradient(90deg, #fffa9b 0%, #ffca4e 16.67%, #f5684c 33.33%, #e74577 50%, #b73fb2 66.67%, #624fcb 83.33%, #1939a9 100%)",
       "pathKey": "path",
       "valuesPathKey": "valuesPath",
-      "maximumKey": "maximumMm"
+      "maximumKey": "maximumMm",
+      "smoothPathKey": "smoothPath"
     },
     "hourly": {
       "label": "Hourly rainfall",
@@ -1107,7 +1108,8 @@
       "legendGradient": "linear-gradient(90deg, #fffabe 0%, #ffe178 14.29%, #ffb547 28.57%, #f67049 42.86%, #e74577 57.14%, #b73fb2 71.43%, #624fcb 85.71%, #1939a9 100%)",
       "pathKey": "hourlyPath",
       "valuesPathKey": "hourlyValuesPath",
-      "maximumKey": "hourlyMaximumMm"
+      "maximumKey": "hourlyMaximumMm",
+      "smoothPathKey": "smoothHourlyPath"
     }
   },
   "hourlyMaximumMm": 49.1,
@@ -1130,7 +1132,9 @@
           "maximumMm": 0.0,
           "hourlyPath": "assets/frames-hourly/rain-000.png",
           "hourlyValuesPath": "assets/values-hourly/rain-000.bin",
-          "hourlyMaximumMm": 0.0
+          "hourlyMaximumMm": 0.0,
+          "smoothPath": "assets/frames-smooth/rain-000.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-000.png"
         },
         {
           "leadHour": 1,
@@ -1142,7 +1146,9 @@
           "maximumMm": 20.1,
           "hourlyPath": "assets/frames-hourly/rain-001.png",
           "hourlyValuesPath": "assets/values-hourly/rain-001.bin",
-          "hourlyMaximumMm": 20.1
+          "hourlyMaximumMm": 20.1,
+          "smoothPath": "assets/frames-smooth/rain-001.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-001.png"
         },
         {
           "leadHour": 2,
@@ -1154,7 +1160,9 @@
           "maximumMm": 39.7,
           "hourlyPath": "assets/frames-hourly/rain-002.png",
           "hourlyValuesPath": "assets/values-hourly/rain-002.bin",
-          "hourlyMaximumMm": 21.9
+          "hourlyMaximumMm": 21.9,
+          "smoothPath": "assets/frames-smooth/rain-002.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-002.png"
         },
         {
           "leadHour": 3,
@@ -1166,7 +1174,9 @@
           "maximumMm": 49.1,
           "hourlyPath": "assets/frames-hourly/rain-003.png",
           "hourlyValuesPath": "assets/values-hourly/rain-003.bin",
-          "hourlyMaximumMm": 19.4
+          "hourlyMaximumMm": 19.4,
+          "smoothPath": "assets/frames-smooth/rain-003.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-003.png"
         },
         {
           "leadHour": 4,
@@ -1178,7 +1188,9 @@
           "maximumMm": 60.4,
           "hourlyPath": "assets/frames-hourly/rain-004.png",
           "hourlyValuesPath": "assets/values-hourly/rain-004.bin",
-          "hourlyMaximumMm": 22.9
+          "hourlyMaximumMm": 22.9,
+          "smoothPath": "assets/frames-smooth/rain-004.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-004.png"
         },
         {
           "leadHour": 5,
@@ -1190,7 +1202,9 @@
           "maximumMm": 79.2,
           "hourlyPath": "assets/frames-hourly/rain-005.png",
           "hourlyValuesPath": "assets/values-hourly/rain-005.bin",
-          "hourlyMaximumMm": 26.3
+          "hourlyMaximumMm": 26.3,
+          "smoothPath": "assets/frames-smooth/rain-005.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-005.png"
         },
         {
           "leadHour": 6,
@@ -1202,7 +1216,9 @@
           "maximumMm": 89.5,
           "hourlyPath": "assets/frames-hourly/rain-006.png",
           "hourlyValuesPath": "assets/values-hourly/rain-006.bin",
-          "hourlyMaximumMm": 22.4
+          "hourlyMaximumMm": 22.4,
+          "smoothPath": "assets/frames-smooth/rain-006.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-006.png"
         },
         {
           "leadHour": 7,
@@ -1214,7 +1230,9 @@
           "maximumMm": 93.3,
           "hourlyPath": "assets/frames-hourly/rain-007.png",
           "hourlyValuesPath": "assets/values-hourly/rain-007.bin",
-          "hourlyMaximumMm": 21.5
+          "hourlyMaximumMm": 21.5,
+          "smoothPath": "assets/frames-smooth/rain-007.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-007.png"
         },
         {
           "leadHour": 8,
@@ -1226,7 +1244,9 @@
           "maximumMm": 101.0,
           "hourlyPath": "assets/frames-hourly/rain-008.png",
           "hourlyValuesPath": "assets/values-hourly/rain-008.bin",
-          "hourlyMaximumMm": 19.0
+          "hourlyMaximumMm": 19.0,
+          "smoothPath": "assets/frames-smooth/rain-008.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-008.png"
         },
         {
           "leadHour": 9,
@@ -1238,7 +1258,9 @@
           "maximumMm": 114.6,
           "hourlyPath": "assets/frames-hourly/rain-009.png",
           "hourlyValuesPath": "assets/values-hourly/rain-009.bin",
-          "hourlyMaximumMm": 22.5
+          "hourlyMaximumMm": 22.5,
+          "smoothPath": "assets/frames-smooth/rain-009.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-009.png"
         },
         {
           "leadHour": 10,
@@ -1250,7 +1272,9 @@
           "maximumMm": 127.5,
           "hourlyPath": "assets/frames-hourly/rain-010.png",
           "hourlyValuesPath": "assets/values-hourly/rain-010.bin",
-          "hourlyMaximumMm": 35.8
+          "hourlyMaximumMm": 35.8,
+          "smoothPath": "assets/frames-smooth/rain-010.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-010.png"
         },
         {
           "leadHour": 11,
@@ -1262,7 +1286,9 @@
           "maximumMm": 139.6,
           "hourlyPath": "assets/frames-hourly/rain-011.png",
           "hourlyValuesPath": "assets/values-hourly/rain-011.bin",
-          "hourlyMaximumMm": 32.3
+          "hourlyMaximumMm": 32.3,
+          "smoothPath": "assets/frames-smooth/rain-011.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-011.png"
         },
         {
           "leadHour": 12,
@@ -1274,7 +1300,9 @@
           "maximumMm": 153.2,
           "hourlyPath": "assets/frames-hourly/rain-012.png",
           "hourlyValuesPath": "assets/values-hourly/rain-012.bin",
-          "hourlyMaximumMm": 23.3
+          "hourlyMaximumMm": 23.3,
+          "smoothPath": "assets/frames-smooth/rain-012.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-012.png"
         },
         {
           "leadHour": 13,
@@ -1286,7 +1314,9 @@
           "maximumMm": 167.0,
           "hourlyPath": "assets/frames-hourly/rain-013.png",
           "hourlyValuesPath": "assets/values-hourly/rain-013.bin",
-          "hourlyMaximumMm": 35.2
+          "hourlyMaximumMm": 35.2,
+          "smoothPath": "assets/frames-smooth/rain-013.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-013.png"
         },
         {
           "leadHour": 14,
@@ -1298,7 +1328,9 @@
           "maximumMm": 180.7,
           "hourlyPath": "assets/frames-hourly/rain-014.png",
           "hourlyValuesPath": "assets/values-hourly/rain-014.bin",
-          "hourlyMaximumMm": 29.6
+          "hourlyMaximumMm": 29.6,
+          "smoothPath": "assets/frames-smooth/rain-014.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-014.png"
         },
         {
           "leadHour": 15,
@@ -1310,7 +1342,9 @@
           "maximumMm": 189.4,
           "hourlyPath": "assets/frames-hourly/rain-015.png",
           "hourlyValuesPath": "assets/values-hourly/rain-015.bin",
-          "hourlyMaximumMm": 26.4
+          "hourlyMaximumMm": 26.4,
+          "smoothPath": "assets/frames-smooth/rain-015.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-015.png"
         },
         {
           "leadHour": 16,
@@ -1322,7 +1356,9 @@
           "maximumMm": 191.8,
           "hourlyPath": "assets/frames-hourly/rain-016.png",
           "hourlyValuesPath": "assets/values-hourly/rain-016.bin",
-          "hourlyMaximumMm": 28.7
+          "hourlyMaximumMm": 28.7,
+          "smoothPath": "assets/frames-smooth/rain-016.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-016.png"
         },
         {
           "leadHour": 17,
@@ -1334,7 +1370,9 @@
           "maximumMm": 213.0,
           "hourlyPath": "assets/frames-hourly/rain-017.png",
           "hourlyValuesPath": "assets/values-hourly/rain-017.bin",
-          "hourlyMaximumMm": 31.5
+          "hourlyMaximumMm": 31.5,
+          "smoothPath": "assets/frames-smooth/rain-017.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-017.png"
         },
         {
           "leadHour": 18,
@@ -1346,7 +1384,9 @@
           "maximumMm": 230.8,
           "hourlyPath": "assets/frames-hourly/rain-018.png",
           "hourlyValuesPath": "assets/values-hourly/rain-018.bin",
-          "hourlyMaximumMm": 25.1
+          "hourlyMaximumMm": 25.1,
+          "smoothPath": "assets/frames-smooth/rain-018.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-018.png"
         },
         {
           "leadHour": 19,
@@ -1358,7 +1398,9 @@
           "maximumMm": 241.0,
           "hourlyPath": "assets/frames-hourly/rain-019.png",
           "hourlyValuesPath": "assets/values-hourly/rain-019.bin",
-          "hourlyMaximumMm": 26.1
+          "hourlyMaximumMm": 26.1,
+          "smoothPath": "assets/frames-smooth/rain-019.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-019.png"
         },
         {
           "leadHour": 20,
@@ -1370,7 +1412,9 @@
           "maximumMm": 243.2,
           "hourlyPath": "assets/frames-hourly/rain-020.png",
           "hourlyValuesPath": "assets/values-hourly/rain-020.bin",
-          "hourlyMaximumMm": 24.9
+          "hourlyMaximumMm": 24.9,
+          "smoothPath": "assets/frames-smooth/rain-020.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-020.png"
         },
         {
           "leadHour": 21,
@@ -1382,7 +1426,9 @@
           "maximumMm": 247.5,
           "hourlyPath": "assets/frames-hourly/rain-021.png",
           "hourlyValuesPath": "assets/values-hourly/rain-021.bin",
-          "hourlyMaximumMm": 26.9
+          "hourlyMaximumMm": 26.9,
+          "smoothPath": "assets/frames-smooth/rain-021.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-021.png"
         },
         {
           "leadHour": 22,
@@ -1394,7 +1440,9 @@
           "maximumMm": 253.1,
           "hourlyPath": "assets/frames-hourly/rain-022.png",
           "hourlyValuesPath": "assets/values-hourly/rain-022.bin",
-          "hourlyMaximumMm": 29.0
+          "hourlyMaximumMm": 29.0,
+          "smoothPath": "assets/frames-smooth/rain-022.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-022.png"
         },
         {
           "leadHour": 23,
@@ -1406,7 +1454,9 @@
           "maximumMm": 256.4,
           "hourlyPath": "assets/frames-hourly/rain-023.png",
           "hourlyValuesPath": "assets/values-hourly/rain-023.bin",
-          "hourlyMaximumMm": 19.0
+          "hourlyMaximumMm": 19.0,
+          "smoothPath": "assets/frames-smooth/rain-023.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-023.png"
         },
         {
           "leadHour": 24,
@@ -1418,7 +1468,9 @@
           "maximumMm": 258.6,
           "hourlyPath": "assets/frames-hourly/rain-024.png",
           "hourlyValuesPath": "assets/values-hourly/rain-024.bin",
-          "hourlyMaximumMm": 16.6
+          "hourlyMaximumMm": 16.6,
+          "smoothPath": "assets/frames-smooth/rain-024.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-024.png"
         },
         {
           "leadHour": 25,
@@ -1430,7 +1482,9 @@
           "maximumMm": 259.0,
           "hourlyPath": "assets/frames-hourly/rain-025.png",
           "hourlyValuesPath": "assets/values-hourly/rain-025.bin",
-          "hourlyMaximumMm": 5.3
+          "hourlyMaximumMm": 5.3,
+          "smoothPath": "assets/frames-smooth/rain-025.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-025.png"
         },
         {
           "leadHour": 26,
@@ -1442,7 +1496,9 @@
           "maximumMm": 259.0,
           "hourlyPath": "assets/frames-hourly/rain-026.png",
           "hourlyValuesPath": "assets/values-hourly/rain-026.bin",
-          "hourlyMaximumMm": 4.8
+          "hourlyMaximumMm": 4.8,
+          "smoothPath": "assets/frames-smooth/rain-026.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-026.png"
         },
         {
           "leadHour": 27,
@@ -1454,7 +1510,9 @@
           "maximumMm": 259.0,
           "hourlyPath": "assets/frames-hourly/rain-027.png",
           "hourlyValuesPath": "assets/values-hourly/rain-027.bin",
-          "hourlyMaximumMm": 7.0
+          "hourlyMaximumMm": 7.0,
+          "smoothPath": "assets/frames-smooth/rain-027.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-027.png"
         },
         {
           "leadHour": 28,
@@ -1466,7 +1524,9 @@
           "maximumMm": 259.0,
           "hourlyPath": "assets/frames-hourly/rain-028.png",
           "hourlyValuesPath": "assets/values-hourly/rain-028.bin",
-          "hourlyMaximumMm": 6.0
+          "hourlyMaximumMm": 6.0,
+          "smoothPath": "assets/frames-smooth/rain-028.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-028.png"
         },
         {
           "leadHour": 29,
@@ -1478,7 +1538,9 @@
           "maximumMm": 259.0,
           "hourlyPath": "assets/frames-hourly/rain-029.png",
           "hourlyValuesPath": "assets/values-hourly/rain-029.bin",
-          "hourlyMaximumMm": 7.1
+          "hourlyMaximumMm": 7.1,
+          "smoothPath": "assets/frames-smooth/rain-029.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-029.png"
         },
         {
           "leadHour": 30,
@@ -1490,7 +1552,9 @@
           "maximumMm": 259.0,
           "hourlyPath": "assets/frames-hourly/rain-030.png",
           "hourlyValuesPath": "assets/values-hourly/rain-030.bin",
-          "hourlyMaximumMm": 13.8
+          "hourlyMaximumMm": 13.8,
+          "smoothPath": "assets/frames-smooth/rain-030.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-030.png"
         },
         {
           "leadHour": 31,
@@ -1502,7 +1566,9 @@
           "maximumMm": 259.0,
           "hourlyPath": "assets/frames-hourly/rain-031.png",
           "hourlyValuesPath": "assets/values-hourly/rain-031.bin",
-          "hourlyMaximumMm": 19.6
+          "hourlyMaximumMm": 19.6,
+          "smoothPath": "assets/frames-smooth/rain-031.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-031.png"
         },
         {
           "leadHour": 32,
@@ -1514,7 +1580,9 @@
           "maximumMm": 259.0,
           "hourlyPath": "assets/frames-hourly/rain-032.png",
           "hourlyValuesPath": "assets/values-hourly/rain-032.bin",
-          "hourlyMaximumMm": 20.8
+          "hourlyMaximumMm": 20.8,
+          "smoothPath": "assets/frames-smooth/rain-032.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-032.png"
         },
         {
           "leadHour": 33,
@@ -1526,7 +1594,9 @@
           "maximumMm": 259.0,
           "hourlyPath": "assets/frames-hourly/rain-033.png",
           "hourlyValuesPath": "assets/values-hourly/rain-033.bin",
-          "hourlyMaximumMm": 24.6
+          "hourlyMaximumMm": 24.6,
+          "smoothPath": "assets/frames-smooth/rain-033.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-033.png"
         },
         {
           "leadHour": 34,
@@ -1538,7 +1608,9 @@
           "maximumMm": 259.0,
           "hourlyPath": "assets/frames-hourly/rain-034.png",
           "hourlyValuesPath": "assets/values-hourly/rain-034.bin",
-          "hourlyMaximumMm": 24.2
+          "hourlyMaximumMm": 24.2,
+          "smoothPath": "assets/frames-smooth/rain-034.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-034.png"
         },
         {
           "leadHour": 35,
@@ -1550,7 +1622,9 @@
           "maximumMm": 259.0,
           "hourlyPath": "assets/frames-hourly/rain-035.png",
           "hourlyValuesPath": "assets/values-hourly/rain-035.bin",
-          "hourlyMaximumMm": 22.1
+          "hourlyMaximumMm": 22.1,
+          "smoothPath": "assets/frames-smooth/rain-035.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-035.png"
         },
         {
           "leadHour": 36,
@@ -1562,7 +1636,9 @@
           "maximumMm": 259.0,
           "hourlyPath": "assets/frames-hourly/rain-036.png",
           "hourlyValuesPath": "assets/values-hourly/rain-036.bin",
-          "hourlyMaximumMm": 30.4
+          "hourlyMaximumMm": 30.4,
+          "smoothPath": "assets/frames-smooth/rain-036.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-036.png"
         },
         {
           "leadHour": 37,
@@ -1574,7 +1650,9 @@
           "maximumMm": 259.9,
           "hourlyPath": "assets/frames-hourly/rain-037.png",
           "hourlyValuesPath": "assets/values-hourly/rain-037.bin",
-          "hourlyMaximumMm": 20.9
+          "hourlyMaximumMm": 20.9,
+          "smoothPath": "assets/frames-smooth/rain-037.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-037.png"
         },
         {
           "leadHour": 38,
@@ -1586,7 +1664,9 @@
           "maximumMm": 261.7,
           "hourlyPath": "assets/frames-hourly/rain-038.png",
           "hourlyValuesPath": "assets/values-hourly/rain-038.bin",
-          "hourlyMaximumMm": 18.7
+          "hourlyMaximumMm": 18.7,
+          "smoothPath": "assets/frames-smooth/rain-038.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-038.png"
         },
         {
           "leadHour": 39,
@@ -1598,7 +1678,9 @@
           "maximumMm": 263.6,
           "hourlyPath": "assets/frames-hourly/rain-039.png",
           "hourlyValuesPath": "assets/values-hourly/rain-039.bin",
-          "hourlyMaximumMm": 21.7
+          "hourlyMaximumMm": 21.7,
+          "smoothPath": "assets/frames-smooth/rain-039.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-039.png"
         },
         {
           "leadHour": 40,
@@ -1610,7 +1692,9 @@
           "maximumMm": 265.1,
           "hourlyPath": "assets/frames-hourly/rain-040.png",
           "hourlyValuesPath": "assets/values-hourly/rain-040.bin",
-          "hourlyMaximumMm": 49.1
+          "hourlyMaximumMm": 49.1,
+          "smoothPath": "assets/frames-smooth/rain-040.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-040.png"
         },
         {
           "leadHour": 41,
@@ -1622,7 +1706,9 @@
           "maximumMm": 266.8,
           "hourlyPath": "assets/frames-hourly/rain-041.png",
           "hourlyValuesPath": "assets/values-hourly/rain-041.bin",
-          "hourlyMaximumMm": 31.0
+          "hourlyMaximumMm": 31.0,
+          "smoothPath": "assets/frames-smooth/rain-041.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-041.png"
         },
         {
           "leadHour": 42,
@@ -1634,7 +1720,9 @@
           "maximumMm": 266.8,
           "hourlyPath": "assets/frames-hourly/rain-042.png",
           "hourlyValuesPath": "assets/values-hourly/rain-042.bin",
-          "hourlyMaximumMm": 20.6
+          "hourlyMaximumMm": 20.6,
+          "smoothPath": "assets/frames-smooth/rain-042.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-042.png"
         },
         {
           "leadHour": 43,
@@ -1646,7 +1734,9 @@
           "maximumMm": 266.8,
           "hourlyPath": "assets/frames-hourly/rain-043.png",
           "hourlyValuesPath": "assets/values-hourly/rain-043.bin",
-          "hourlyMaximumMm": 40.7
+          "hourlyMaximumMm": 40.7,
+          "smoothPath": "assets/frames-smooth/rain-043.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-043.png"
         },
         {
           "leadHour": 44,
@@ -1658,7 +1748,9 @@
           "maximumMm": 266.8,
           "hourlyPath": "assets/frames-hourly/rain-044.png",
           "hourlyValuesPath": "assets/values-hourly/rain-044.bin",
-          "hourlyMaximumMm": 28.1
+          "hourlyMaximumMm": 28.1,
+          "smoothPath": "assets/frames-smooth/rain-044.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-044.png"
         },
         {
           "leadHour": 45,
@@ -1670,7 +1762,9 @@
           "maximumMm": 266.9,
           "hourlyPath": "assets/frames-hourly/rain-045.png",
           "hourlyValuesPath": "assets/values-hourly/rain-045.bin",
-          "hourlyMaximumMm": 26.5
+          "hourlyMaximumMm": 26.5,
+          "smoothPath": "assets/frames-smooth/rain-045.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-045.png"
         },
         {
           "leadHour": 46,
@@ -1682,7 +1776,9 @@
           "maximumMm": 267.0,
           "hourlyPath": "assets/frames-hourly/rain-046.png",
           "hourlyValuesPath": "assets/values-hourly/rain-046.bin",
-          "hourlyMaximumMm": 29.5
+          "hourlyMaximumMm": 29.5,
+          "smoothPath": "assets/frames-smooth/rain-046.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-046.png"
         },
         {
           "leadHour": 47,
@@ -1694,7 +1790,9 @@
           "maximumMm": 268.2,
           "hourlyPath": "assets/frames-hourly/rain-047.png",
           "hourlyValuesPath": "assets/values-hourly/rain-047.bin",
-          "hourlyMaximumMm": 30.8
+          "hourlyMaximumMm": 30.8,
+          "smoothPath": "assets/frames-smooth/rain-047.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-047.png"
         },
         {
           "leadHour": 48,
@@ -1706,7 +1804,9 @@
           "maximumMm": 268.3,
           "hourlyPath": "assets/frames-hourly/rain-048.png",
           "hourlyValuesPath": "assets/values-hourly/rain-048.bin",
-          "hourlyMaximumMm": 25.8
+          "hourlyMaximumMm": 25.8,
+          "smoothPath": "assets/frames-smooth/rain-048.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-048.png"
         },
         {
           "leadHour": 49,
@@ -1718,7 +1818,9 @@
           "maximumMm": 268.8,
           "hourlyPath": "assets/frames-hourly/rain-049.png",
           "hourlyValuesPath": "assets/values-hourly/rain-049.bin",
-          "hourlyMaximumMm": 30.9
+          "hourlyMaximumMm": 30.9,
+          "smoothPath": "assets/frames-smooth/rain-049.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-049.png"
         },
         {
           "leadHour": 50,
@@ -1730,7 +1832,9 @@
           "maximumMm": 270.2,
           "hourlyPath": "assets/frames-hourly/rain-050.png",
           "hourlyValuesPath": "assets/values-hourly/rain-050.bin",
-          "hourlyMaximumMm": 24.8
+          "hourlyMaximumMm": 24.8,
+          "smoothPath": "assets/frames-smooth/rain-050.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-050.png"
         },
         {
           "leadHour": 51,
@@ -1742,7 +1846,9 @@
           "maximumMm": 274.7,
           "hourlyPath": "assets/frames-hourly/rain-051.png",
           "hourlyValuesPath": "assets/values-hourly/rain-051.bin",
-          "hourlyMaximumMm": 26.3
+          "hourlyMaximumMm": 26.3,
+          "smoothPath": "assets/frames-smooth/rain-051.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-051.png"
         },
         {
           "leadHour": 52,
@@ -1754,7 +1860,9 @@
           "maximumMm": 275.4,
           "hourlyPath": "assets/frames-hourly/rain-052.png",
           "hourlyValuesPath": "assets/values-hourly/rain-052.bin",
-          "hourlyMaximumMm": 22.0
+          "hourlyMaximumMm": 22.0,
+          "smoothPath": "assets/frames-smooth/rain-052.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-052.png"
         },
         {
           "leadHour": 53,
@@ -1766,7 +1874,9 @@
           "maximumMm": 275.9,
           "hourlyPath": "assets/frames-hourly/rain-053.png",
           "hourlyValuesPath": "assets/values-hourly/rain-053.bin",
-          "hourlyMaximumMm": 22.1
+          "hourlyMaximumMm": 22.1,
+          "smoothPath": "assets/frames-smooth/rain-053.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-053.png"
         },
         {
           "leadHour": 54,
@@ -1778,7 +1888,9 @@
           "maximumMm": 275.9,
           "hourlyPath": "assets/frames-hourly/rain-054.png",
           "hourlyValuesPath": "assets/values-hourly/rain-054.bin",
-          "hourlyMaximumMm": 25.9
+          "hourlyMaximumMm": 25.9,
+          "smoothPath": "assets/frames-smooth/rain-054.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-054.png"
         },
         {
           "leadHour": 55,
@@ -1790,7 +1902,9 @@
           "maximumMm": 275.9,
           "hourlyPath": "assets/frames-hourly/rain-055.png",
           "hourlyValuesPath": "assets/values-hourly/rain-055.bin",
-          "hourlyMaximumMm": 35.2
+          "hourlyMaximumMm": 35.2,
+          "smoothPath": "assets/frames-smooth/rain-055.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-055.png"
         },
         {
           "leadHour": 56,
@@ -1802,7 +1916,9 @@
           "maximumMm": 275.9,
           "hourlyPath": "assets/frames-hourly/rain-056.png",
           "hourlyValuesPath": "assets/values-hourly/rain-056.bin",
-          "hourlyMaximumMm": 38.5
+          "hourlyMaximumMm": 38.5,
+          "smoothPath": "assets/frames-smooth/rain-056.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-056.png"
         },
         {
           "leadHour": 57,
@@ -1814,7 +1930,9 @@
           "maximumMm": 275.9,
           "hourlyPath": "assets/frames-hourly/rain-057.png",
           "hourlyValuesPath": "assets/values-hourly/rain-057.bin",
-          "hourlyMaximumMm": 28.1
+          "hourlyMaximumMm": 28.1,
+          "smoothPath": "assets/frames-smooth/rain-057.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-057.png"
         },
         {
           "leadHour": 58,
@@ -1826,7 +1944,9 @@
           "maximumMm": 275.9,
           "hourlyPath": "assets/frames-hourly/rain-058.png",
           "hourlyValuesPath": "assets/values-hourly/rain-058.bin",
-          "hourlyMaximumMm": 31.3
+          "hourlyMaximumMm": 31.3,
+          "smoothPath": "assets/frames-smooth/rain-058.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-058.png"
         },
         {
           "leadHour": 59,
@@ -1838,7 +1958,9 @@
           "maximumMm": 275.9,
           "hourlyPath": "assets/frames-hourly/rain-059.png",
           "hourlyValuesPath": "assets/values-hourly/rain-059.bin",
-          "hourlyMaximumMm": 19.1
+          "hourlyMaximumMm": 19.1,
+          "smoothPath": "assets/frames-smooth/rain-059.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-059.png"
         },
         {
           "leadHour": 60,
@@ -1850,7 +1972,9 @@
           "maximumMm": 275.9,
           "hourlyPath": "assets/frames-hourly/rain-060.png",
           "hourlyValuesPath": "assets/values-hourly/rain-060.bin",
-          "hourlyMaximumMm": 20.9
+          "hourlyMaximumMm": 20.9,
+          "smoothPath": "assets/frames-smooth/rain-060.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-060.png"
         },
         {
           "leadHour": 61,
@@ -1862,7 +1986,9 @@
           "maximumMm": 275.9,
           "hourlyPath": "assets/frames-hourly/rain-061.png",
           "hourlyValuesPath": "assets/values-hourly/rain-061.bin",
-          "hourlyMaximumMm": 17.5
+          "hourlyMaximumMm": 17.5,
+          "smoothPath": "assets/frames-smooth/rain-061.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-061.png"
         },
         {
           "leadHour": 62,
@@ -1874,7 +2000,9 @@
           "maximumMm": 275.9,
           "hourlyPath": "assets/frames-hourly/rain-062.png",
           "hourlyValuesPath": "assets/values-hourly/rain-062.bin",
-          "hourlyMaximumMm": 17.1
+          "hourlyMaximumMm": 17.1,
+          "smoothPath": "assets/frames-smooth/rain-062.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-062.png"
         },
         {
           "leadHour": 63,
@@ -1886,7 +2014,9 @@
           "maximumMm": 275.9,
           "hourlyPath": "assets/frames-hourly/rain-063.png",
           "hourlyValuesPath": "assets/values-hourly/rain-063.bin",
-          "hourlyMaximumMm": 18.8
+          "hourlyMaximumMm": 18.8,
+          "smoothPath": "assets/frames-smooth/rain-063.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-063.png"
         },
         {
           "leadHour": 64,
@@ -1898,7 +2028,9 @@
           "maximumMm": 276.4,
           "hourlyPath": "assets/frames-hourly/rain-064.png",
           "hourlyValuesPath": "assets/values-hourly/rain-064.bin",
-          "hourlyMaximumMm": 15.3
+          "hourlyMaximumMm": 15.3,
+          "smoothPath": "assets/frames-smooth/rain-064.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-064.png"
         },
         {
           "leadHour": 65,
@@ -1910,7 +2042,9 @@
           "maximumMm": 277.1,
           "hourlyPath": "assets/frames-hourly/rain-065.png",
           "hourlyValuesPath": "assets/values-hourly/rain-065.bin",
-          "hourlyMaximumMm": 15.5
+          "hourlyMaximumMm": 15.5,
+          "smoothPath": "assets/frames-smooth/rain-065.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-065.png"
         },
         {
           "leadHour": 66,
@@ -1922,7 +2056,9 @@
           "maximumMm": 277.5,
           "hourlyPath": "assets/frames-hourly/rain-066.png",
           "hourlyValuesPath": "assets/values-hourly/rain-066.bin",
-          "hourlyMaximumMm": 17.6
+          "hourlyMaximumMm": 17.6,
+          "smoothPath": "assets/frames-smooth/rain-066.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-066.png"
         },
         {
           "leadHour": 67,
@@ -1934,7 +2070,9 @@
           "maximumMm": 278.0,
           "hourlyPath": "assets/frames-hourly/rain-067.png",
           "hourlyValuesPath": "assets/values-hourly/rain-067.bin",
-          "hourlyMaximumMm": 14.1
+          "hourlyMaximumMm": 14.1,
+          "smoothPath": "assets/frames-smooth/rain-067.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-067.png"
         },
         {
           "leadHour": 68,
@@ -1946,7 +2084,9 @@
           "maximumMm": 278.0,
           "hourlyPath": "assets/frames-hourly/rain-068.png",
           "hourlyValuesPath": "assets/values-hourly/rain-068.bin",
-          "hourlyMaximumMm": 13.7
+          "hourlyMaximumMm": 13.7,
+          "smoothPath": "assets/frames-smooth/rain-068.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-068.png"
         },
         {
           "leadHour": 69,
@@ -1958,7 +2098,9 @@
           "maximumMm": 278.0,
           "hourlyPath": "assets/frames-hourly/rain-069.png",
           "hourlyValuesPath": "assets/values-hourly/rain-069.bin",
-          "hourlyMaximumMm": 21.7
+          "hourlyMaximumMm": 21.7,
+          "smoothPath": "assets/frames-smooth/rain-069.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-069.png"
         },
         {
           "leadHour": 70,
@@ -1970,7 +2112,9 @@
           "maximumMm": 278.2,
           "hourlyPath": "assets/frames-hourly/rain-070.png",
           "hourlyValuesPath": "assets/values-hourly/rain-070.bin",
-          "hourlyMaximumMm": 27.9
+          "hourlyMaximumMm": 27.9,
+          "smoothPath": "assets/frames-smooth/rain-070.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-070.png"
         },
         {
           "leadHour": 71,
@@ -1982,7 +2126,9 @@
           "maximumMm": 279.6,
           "hourlyPath": "assets/frames-hourly/rain-071.png",
           "hourlyValuesPath": "assets/values-hourly/rain-071.bin",
-          "hourlyMaximumMm": 20.1
+          "hourlyMaximumMm": 20.1,
+          "smoothPath": "assets/frames-smooth/rain-071.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-071.png"
         },
         {
           "leadHour": 72,
@@ -1994,7 +2140,9 @@
           "maximumMm": 280.9,
           "hourlyPath": "assets/frames-hourly/rain-072.png",
           "hourlyValuesPath": "assets/values-hourly/rain-072.bin",
-          "hourlyMaximumMm": 16.2
+          "hourlyMaximumMm": 16.2,
+          "smoothPath": "assets/frames-smooth/rain-072.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-072.png"
         },
         {
           "leadHour": 73,
@@ -2006,7 +2154,9 @@
           "maximumMm": 281.3,
           "hourlyPath": "assets/frames-hourly/rain-073.png",
           "hourlyValuesPath": "assets/values-hourly/rain-073.bin",
-          "hourlyMaximumMm": 14.9
+          "hourlyMaximumMm": 14.9,
+          "smoothPath": "assets/frames-smooth/rain-073.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-073.png"
         },
         {
           "leadHour": 74,
@@ -2018,7 +2168,9 @@
           "maximumMm": 281.3,
           "hourlyPath": "assets/frames-hourly/rain-074.png",
           "hourlyValuesPath": "assets/values-hourly/rain-074.bin",
-          "hourlyMaximumMm": 12.3
+          "hourlyMaximumMm": 12.3,
+          "smoothPath": "assets/frames-smooth/rain-074.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-074.png"
         },
         {
           "leadHour": 75,
@@ -2030,7 +2182,9 @@
           "maximumMm": 283.7,
           "hourlyPath": "assets/frames-hourly/rain-075.png",
           "hourlyValuesPath": "assets/values-hourly/rain-075.bin",
-          "hourlyMaximumMm": 13.0
+          "hourlyMaximumMm": 13.0,
+          "smoothPath": "assets/frames-smooth/rain-075.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-075.png"
         },
         {
           "leadHour": 76,
@@ -2042,7 +2196,9 @@
           "maximumMm": 286.9,
           "hourlyPath": "assets/frames-hourly/rain-076.png",
           "hourlyValuesPath": "assets/values-hourly/rain-076.bin",
-          "hourlyMaximumMm": 13.9
+          "hourlyMaximumMm": 13.9,
+          "smoothPath": "assets/frames-smooth/rain-076.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-076.png"
         },
         {
           "leadHour": 77,
@@ -2054,7 +2210,9 @@
           "maximumMm": 292.7,
           "hourlyPath": "assets/frames-hourly/rain-077.png",
           "hourlyValuesPath": "assets/values-hourly/rain-077.bin",
-          "hourlyMaximumMm": 17.4
+          "hourlyMaximumMm": 17.4,
+          "smoothPath": "assets/frames-smooth/rain-077.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-077.png"
         },
         {
           "leadHour": 78,
@@ -2066,7 +2224,9 @@
           "maximumMm": 294.8,
           "hourlyPath": "assets/frames-hourly/rain-078.png",
           "hourlyValuesPath": "assets/values-hourly/rain-078.bin",
-          "hourlyMaximumMm": 12.5
+          "hourlyMaximumMm": 12.5,
+          "smoothPath": "assets/frames-smooth/rain-078.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-078.png"
         },
         {
           "leadHour": 79,
@@ -2078,7 +2238,9 @@
           "maximumMm": 294.9,
           "hourlyPath": "assets/frames-hourly/rain-079.png",
           "hourlyValuesPath": "assets/values-hourly/rain-079.bin",
-          "hourlyMaximumMm": 17.3
+          "hourlyMaximumMm": 17.3,
+          "smoothPath": "assets/frames-smooth/rain-079.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-079.png"
         },
         {
           "leadHour": 80,
@@ -2090,7 +2252,9 @@
           "maximumMm": 295.3,
           "hourlyPath": "assets/frames-hourly/rain-080.png",
           "hourlyValuesPath": "assets/values-hourly/rain-080.bin",
-          "hourlyMaximumMm": 18.4
+          "hourlyMaximumMm": 18.4,
+          "smoothPath": "assets/frames-smooth/rain-080.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-080.png"
         },
         {
           "leadHour": 81,
@@ -2102,7 +2266,9 @@
           "maximumMm": 295.5,
           "hourlyPath": "assets/frames-hourly/rain-081.png",
           "hourlyValuesPath": "assets/values-hourly/rain-081.bin",
-          "hourlyMaximumMm": 14.5
+          "hourlyMaximumMm": 14.5,
+          "smoothPath": "assets/frames-smooth/rain-081.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-081.png"
         },
         {
           "leadHour": 82,
@@ -2114,7 +2280,9 @@
           "maximumMm": 296.0,
           "hourlyPath": "assets/frames-hourly/rain-082.png",
           "hourlyValuesPath": "assets/values-hourly/rain-082.bin",
-          "hourlyMaximumMm": 7.3
+          "hourlyMaximumMm": 7.3,
+          "smoothPath": "assets/frames-smooth/rain-082.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-082.png"
         },
         {
           "leadHour": 83,
@@ -2126,7 +2294,9 @@
           "maximumMm": 296.2,
           "hourlyPath": "assets/frames-hourly/rain-083.png",
           "hourlyValuesPath": "assets/values-hourly/rain-083.bin",
-          "hourlyMaximumMm": 6.8
+          "hourlyMaximumMm": 6.8,
+          "smoothPath": "assets/frames-smooth/rain-083.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-083.png"
         },
         {
           "leadHour": 84,
@@ -2138,7 +2308,9 @@
           "maximumMm": 296.2,
           "hourlyPath": "assets/frames-hourly/rain-084.png",
           "hourlyValuesPath": "assets/values-hourly/rain-084.bin",
-          "hourlyMaximumMm": 7.9
+          "hourlyMaximumMm": 7.9,
+          "smoothPath": "assets/frames-smooth/rain-084.png",
+          "smoothHourlyPath": "assets/frames-hourly-smooth/rain-084.png"
         }
       ]
     },
@@ -2159,7 +2331,9 @@
           "maximumMm": 0.0,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-000.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-000.bin",
-          "hourlyMaximumMm": 0.0
+          "hourlyMaximumMm": 0.0,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-000.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-000.png"
         },
         {
           "leadHour": 1,
@@ -2171,7 +2345,9 @@
           "maximumMm": 20.2,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-001.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-001.bin",
-          "hourlyMaximumMm": 20.2
+          "hourlyMaximumMm": 20.2,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-001.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-001.png"
         },
         {
           "leadHour": 2,
@@ -2183,7 +2359,9 @@
           "maximumMm": 33.3,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-002.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-002.bin",
-          "hourlyMaximumMm": 19.5
+          "hourlyMaximumMm": 19.5,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-002.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-002.png"
         },
         {
           "leadHour": 3,
@@ -2195,7 +2373,9 @@
           "maximumMm": 43.7,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-003.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-003.bin",
-          "hourlyMaximumMm": 19.4
+          "hourlyMaximumMm": 19.4,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-003.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-003.png"
         },
         {
           "leadHour": 4,
@@ -2207,7 +2387,9 @@
           "maximumMm": 51.4,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-004.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-004.bin",
-          "hourlyMaximumMm": 23.4
+          "hourlyMaximumMm": 23.4,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-004.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-004.png"
         },
         {
           "leadHour": 5,
@@ -2219,7 +2401,9 @@
           "maximumMm": 61.5,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-005.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-005.bin",
-          "hourlyMaximumMm": 22.3
+          "hourlyMaximumMm": 22.3,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-005.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-005.png"
         },
         {
           "leadHour": 6,
@@ -2231,7 +2415,9 @@
           "maximumMm": 76.0,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-006.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-006.bin",
-          "hourlyMaximumMm": 20.1
+          "hourlyMaximumMm": 20.1,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-006.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-006.png"
         },
         {
           "leadHour": 7,
@@ -2243,7 +2429,9 @@
           "maximumMm": 88.9,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-007.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-007.bin",
-          "hourlyMaximumMm": 20.0
+          "hourlyMaximumMm": 20.0,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-007.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-007.png"
         },
         {
           "leadHour": 8,
@@ -2255,7 +2443,9 @@
           "maximumMm": 105.9,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-008.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-008.bin",
-          "hourlyMaximumMm": 22.6
+          "hourlyMaximumMm": 22.6,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-008.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-008.png"
         },
         {
           "leadHour": 9,
@@ -2267,7 +2457,9 @@
           "maximumMm": 124.5,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-009.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-009.bin",
-          "hourlyMaximumMm": 29.6
+          "hourlyMaximumMm": 29.6,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-009.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-009.png"
         },
         {
           "leadHour": 10,
@@ -2279,7 +2471,9 @@
           "maximumMm": 135.2,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-010.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-010.bin",
-          "hourlyMaximumMm": 27.3
+          "hourlyMaximumMm": 27.3,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-010.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-010.png"
         },
         {
           "leadHour": 11,
@@ -2291,7 +2485,9 @@
           "maximumMm": 150.5,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-011.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-011.bin",
-          "hourlyMaximumMm": 23.1
+          "hourlyMaximumMm": 23.1,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-011.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-011.png"
         },
         {
           "leadHour": 12,
@@ -2303,7 +2499,9 @@
           "maximumMm": 167.7,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-012.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-012.bin",
-          "hourlyMaximumMm": 22.1
+          "hourlyMaximumMm": 22.1,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-012.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-012.png"
         },
         {
           "leadHour": 13,
@@ -2315,7 +2513,9 @@
           "maximumMm": 176.4,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-013.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-013.bin",
-          "hourlyMaximumMm": 34.6
+          "hourlyMaximumMm": 34.6,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-013.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-013.png"
         },
         {
           "leadHour": 14,
@@ -2327,7 +2527,9 @@
           "maximumMm": 180.6,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-014.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-014.bin",
-          "hourlyMaximumMm": 29.2
+          "hourlyMaximumMm": 29.2,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-014.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-014.png"
         },
         {
           "leadHour": 15,
@@ -2339,7 +2541,9 @@
           "maximumMm": 182.2,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-015.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-015.bin",
-          "hourlyMaximumMm": 29.6
+          "hourlyMaximumMm": 29.6,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-015.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-015.png"
         },
         {
           "leadHour": 16,
@@ -2351,7 +2555,9 @@
           "maximumMm": 203.4,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-016.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-016.bin",
-          "hourlyMaximumMm": 33.6
+          "hourlyMaximumMm": 33.6,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-016.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-016.png"
         },
         {
           "leadHour": 17,
@@ -2363,7 +2569,9 @@
           "maximumMm": 228.9,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-017.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-017.bin",
-          "hourlyMaximumMm": 26.6
+          "hourlyMaximumMm": 26.6,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-017.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-017.png"
         },
         {
           "leadHour": 18,
@@ -2375,7 +2583,9 @@
           "maximumMm": 239.9,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-018.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-018.bin",
-          "hourlyMaximumMm": 30.7
+          "hourlyMaximumMm": 30.7,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-018.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-018.png"
         },
         {
           "leadHour": 19,
@@ -2387,7 +2597,9 @@
           "maximumMm": 245.3,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-019.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-019.bin",
-          "hourlyMaximumMm": 28.8
+          "hourlyMaximumMm": 28.8,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-019.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-019.png"
         },
         {
           "leadHour": 20,
@@ -2399,7 +2611,9 @@
           "maximumMm": 252.0,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-020.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-020.bin",
-          "hourlyMaximumMm": 24.2
+          "hourlyMaximumMm": 24.2,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-020.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-020.png"
         },
         {
           "leadHour": 21,
@@ -2411,7 +2625,9 @@
           "maximumMm": 256.3,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-021.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-021.bin",
-          "hourlyMaximumMm": 29.2
+          "hourlyMaximumMm": 29.2,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-021.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-021.png"
         },
         {
           "leadHour": 22,
@@ -2423,7 +2639,9 @@
           "maximumMm": 264.4,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-022.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-022.bin",
-          "hourlyMaximumMm": 23.8
+          "hourlyMaximumMm": 23.8,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-022.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-022.png"
         },
         {
           "leadHour": 23,
@@ -2435,7 +2653,9 @@
           "maximumMm": 271.9,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-023.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-023.bin",
-          "hourlyMaximumMm": 17.3
+          "hourlyMaximumMm": 17.3,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-023.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-023.png"
         },
         {
           "leadHour": 24,
@@ -2447,7 +2667,9 @@
           "maximumMm": 275.1,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-024.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-024.bin",
-          "hourlyMaximumMm": 11.0
+          "hourlyMaximumMm": 11.0,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-024.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-024.png"
         },
         {
           "leadHour": 25,
@@ -2459,7 +2681,9 @@
           "maximumMm": 275.7,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-025.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-025.bin",
-          "hourlyMaximumMm": 8.5
+          "hourlyMaximumMm": 8.5,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-025.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-025.png"
         },
         {
           "leadHour": 26,
@@ -2471,7 +2695,9 @@
           "maximumMm": 275.9,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-026.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-026.bin",
-          "hourlyMaximumMm": 4.1
+          "hourlyMaximumMm": 4.1,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-026.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-026.png"
         },
         {
           "leadHour": 27,
@@ -2483,7 +2709,9 @@
           "maximumMm": 276.5,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-027.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-027.bin",
-          "hourlyMaximumMm": 5.4
+          "hourlyMaximumMm": 5.4,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-027.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-027.png"
         },
         {
           "leadHour": 28,
@@ -2495,7 +2723,9 @@
           "maximumMm": 277.6,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-028.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-028.bin",
-          "hourlyMaximumMm": 21.9
+          "hourlyMaximumMm": 21.9,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-028.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-028.png"
         },
         {
           "leadHour": 29,
@@ -2507,7 +2737,9 @@
           "maximumMm": 278.9,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-029.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-029.bin",
-          "hourlyMaximumMm": 19.2
+          "hourlyMaximumMm": 19.2,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-029.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-029.png"
         },
         {
           "leadHour": 30,
@@ -2519,7 +2751,9 @@
           "maximumMm": 279.5,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-030.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-030.bin",
-          "hourlyMaximumMm": 18.1
+          "hourlyMaximumMm": 18.1,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-030.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-030.png"
         },
         {
           "leadHour": 31,
@@ -2531,7 +2765,9 @@
           "maximumMm": 279.5,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-031.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-031.bin",
-          "hourlyMaximumMm": 17.2
+          "hourlyMaximumMm": 17.2,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-031.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-031.png"
         },
         {
           "leadHour": 32,
@@ -2543,7 +2779,9 @@
           "maximumMm": 279.5,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-032.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-032.bin",
-          "hourlyMaximumMm": 12.4
+          "hourlyMaximumMm": 12.4,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-032.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-032.png"
         },
         {
           "leadHour": 33,
@@ -2555,7 +2793,9 @@
           "maximumMm": 279.5,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-033.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-033.bin",
-          "hourlyMaximumMm": 23.1
+          "hourlyMaximumMm": 23.1,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-033.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-033.png"
         },
         {
           "leadHour": 34,
@@ -2567,7 +2807,9 @@
           "maximumMm": 279.5,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-034.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-034.bin",
-          "hourlyMaximumMm": 17.3
+          "hourlyMaximumMm": 17.3,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-034.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-034.png"
         },
         {
           "leadHour": 35,
@@ -2579,7 +2821,9 @@
           "maximumMm": 279.7,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-035.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-035.bin",
-          "hourlyMaximumMm": 27.6
+          "hourlyMaximumMm": 27.6,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-035.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-035.png"
         },
         {
           "leadHour": 36,
@@ -2591,7 +2835,9 @@
           "maximumMm": 281.1,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-036.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-036.bin",
-          "hourlyMaximumMm": 33.5
+          "hourlyMaximumMm": 33.5,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-036.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-036.png"
         },
         {
           "leadHour": 37,
@@ -2603,7 +2849,9 @@
           "maximumMm": 282.6,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-037.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-037.bin",
-          "hourlyMaximumMm": 28.2
+          "hourlyMaximumMm": 28.2,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-037.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-037.png"
         },
         {
           "leadHour": 38,
@@ -2615,7 +2863,9 @@
           "maximumMm": 283.9,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-038.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-038.bin",
-          "hourlyMaximumMm": 25.4
+          "hourlyMaximumMm": 25.4,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-038.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-038.png"
         },
         {
           "leadHour": 39,
@@ -2627,7 +2877,9 @@
           "maximumMm": 291.2,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-039.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-039.bin",
-          "hourlyMaximumMm": 32.2
+          "hourlyMaximumMm": 32.2,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-039.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-039.png"
         },
         {
           "leadHour": 40,
@@ -2639,7 +2891,9 @@
           "maximumMm": 297.2,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-040.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-040.bin",
-          "hourlyMaximumMm": 25.3
+          "hourlyMaximumMm": 25.3,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-040.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-040.png"
         },
         {
           "leadHour": 41,
@@ -2651,7 +2905,9 @@
           "maximumMm": 303.9,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-041.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-041.bin",
-          "hourlyMaximumMm": 26.4
+          "hourlyMaximumMm": 26.4,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-041.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-041.png"
         },
         {
           "leadHour": 42,
@@ -2663,7 +2919,9 @@
           "maximumMm": 305.0,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-042.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-042.bin",
-          "hourlyMaximumMm": 35.2
+          "hourlyMaximumMm": 35.2,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-042.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-042.png"
         },
         {
           "leadHour": 43,
@@ -2675,7 +2933,9 @@
           "maximumMm": 305.0,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-043.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-043.bin",
-          "hourlyMaximumMm": 23.1
+          "hourlyMaximumMm": 23.1,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-043.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-043.png"
         },
         {
           "leadHour": 44,
@@ -2687,7 +2947,9 @@
           "maximumMm": 305.1,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-044.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-044.bin",
-          "hourlyMaximumMm": 18.3
+          "hourlyMaximumMm": 18.3,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-044.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-044.png"
         },
         {
           "leadHour": 45,
@@ -2699,7 +2961,9 @@
           "maximumMm": 306.1,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-045.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-045.bin",
-          "hourlyMaximumMm": 33.5
+          "hourlyMaximumMm": 33.5,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-045.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-045.png"
         },
         {
           "leadHour": 46,
@@ -2711,7 +2975,9 @@
           "maximumMm": 308.4,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-046.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-046.bin",
-          "hourlyMaximumMm": 26.9
+          "hourlyMaximumMm": 26.9,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-046.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-046.png"
         },
         {
           "leadHour": 47,
@@ -2723,7 +2989,9 @@
           "maximumMm": 308.7,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-047.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-047.bin",
-          "hourlyMaximumMm": 20.2
+          "hourlyMaximumMm": 20.2,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-047.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-047.png"
         },
         {
           "leadHour": 48,
@@ -2735,7 +3003,9 @@
           "maximumMm": 309.3,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-048.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-048.bin",
-          "hourlyMaximumMm": 19.5
+          "hourlyMaximumMm": 19.5,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-048.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-048.png"
         },
         {
           "leadHour": 49,
@@ -2747,7 +3017,9 @@
           "maximumMm": 309.7,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-049.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-049.bin",
-          "hourlyMaximumMm": 21.6
+          "hourlyMaximumMm": 21.6,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-049.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-049.png"
         },
         {
           "leadHour": 50,
@@ -2759,7 +3031,9 @@
           "maximumMm": 309.7,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-050.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-050.bin",
-          "hourlyMaximumMm": 26.2
+          "hourlyMaximumMm": 26.2,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-050.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-050.png"
         },
         {
           "leadHour": 51,
@@ -2771,7 +3045,9 @@
           "maximumMm": 309.7,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-051.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-051.bin",
-          "hourlyMaximumMm": 26.8
+          "hourlyMaximumMm": 26.8,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-051.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-051.png"
         },
         {
           "leadHour": 52,
@@ -2783,7 +3059,9 @@
           "maximumMm": 309.7,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-052.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-052.bin",
-          "hourlyMaximumMm": 45.5
+          "hourlyMaximumMm": 45.5,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-052.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-052.png"
         },
         {
           "leadHour": 53,
@@ -2795,7 +3073,9 @@
           "maximumMm": 309.7,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-053.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-053.bin",
-          "hourlyMaximumMm": 23.6
+          "hourlyMaximumMm": 23.6,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-053.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-053.png"
         },
         {
           "leadHour": 54,
@@ -2807,7 +3087,9 @@
           "maximumMm": 309.9,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-054.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-054.bin",
-          "hourlyMaximumMm": 30.4
+          "hourlyMaximumMm": 30.4,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-054.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-054.png"
         },
         {
           "leadHour": 55,
@@ -2819,7 +3101,9 @@
           "maximumMm": 309.9,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-055.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-055.bin",
-          "hourlyMaximumMm": 22.5
+          "hourlyMaximumMm": 22.5,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-055.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-055.png"
         },
         {
           "leadHour": 56,
@@ -2831,7 +3115,9 @@
           "maximumMm": 310.2,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-056.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-056.bin",
-          "hourlyMaximumMm": 22.1
+          "hourlyMaximumMm": 22.1,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-056.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-056.png"
         },
         {
           "leadHour": 57,
@@ -2843,7 +3129,9 @@
           "maximumMm": 310.2,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-057.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-057.bin",
-          "hourlyMaximumMm": 31.2
+          "hourlyMaximumMm": 31.2,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-057.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-057.png"
         },
         {
           "leadHour": 58,
@@ -2855,7 +3143,9 @@
           "maximumMm": 310.2,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-058.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-058.bin",
-          "hourlyMaximumMm": 36.1
+          "hourlyMaximumMm": 36.1,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-058.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-058.png"
         },
         {
           "leadHour": 59,
@@ -2867,7 +3157,9 @@
           "maximumMm": 310.3,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-059.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-059.bin",
-          "hourlyMaximumMm": 28.6
+          "hourlyMaximumMm": 28.6,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-059.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-059.png"
         },
         {
           "leadHour": 60,
@@ -2879,7 +3171,9 @@
           "maximumMm": 310.3,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-060.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-060.bin",
-          "hourlyMaximumMm": 20.8
+          "hourlyMaximumMm": 20.8,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-060.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-060.png"
         },
         {
           "leadHour": 61,
@@ -2891,7 +3185,9 @@
           "maximumMm": 310.4,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-061.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-061.bin",
-          "hourlyMaximumMm": 29.3
+          "hourlyMaximumMm": 29.3,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-061.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-061.png"
         },
         {
           "leadHour": 62,
@@ -2903,7 +3199,9 @@
           "maximumMm": 310.5,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-062.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-062.bin",
-          "hourlyMaximumMm": 20.4
+          "hourlyMaximumMm": 20.4,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-062.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-062.png"
         },
         {
           "leadHour": 63,
@@ -2915,7 +3213,9 @@
           "maximumMm": 310.5,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-063.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-063.bin",
-          "hourlyMaximumMm": 16.9
+          "hourlyMaximumMm": 16.9,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-063.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-063.png"
         },
         {
           "leadHour": 64,
@@ -2927,7 +3227,9 @@
           "maximumMm": 311.1,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-064.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-064.bin",
-          "hourlyMaximumMm": 17.7
+          "hourlyMaximumMm": 17.7,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-064.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-064.png"
         },
         {
           "leadHour": 65,
@@ -2939,7 +3241,9 @@
           "maximumMm": 311.2,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-065.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-065.bin",
-          "hourlyMaximumMm": 21.1
+          "hourlyMaximumMm": 21.1,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-065.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-065.png"
         },
         {
           "leadHour": 66,
@@ -2951,7 +3255,9 @@
           "maximumMm": 311.2,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-066.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-066.bin",
-          "hourlyMaximumMm": 21.8
+          "hourlyMaximumMm": 21.8,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-066.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-066.png"
         },
         {
           "leadHour": 67,
@@ -2963,7 +3269,9 @@
           "maximumMm": 311.2,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-067.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-067.bin",
-          "hourlyMaximumMm": 26.9
+          "hourlyMaximumMm": 26.9,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-067.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-067.png"
         },
         {
           "leadHour": 68,
@@ -2975,7 +3283,9 @@
           "maximumMm": 311.2,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-068.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-068.bin",
-          "hourlyMaximumMm": 23.4
+          "hourlyMaximumMm": 23.4,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-068.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-068.png"
         },
         {
           "leadHour": 69,
@@ -2987,7 +3297,9 @@
           "maximumMm": 311.2,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-069.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-069.bin",
-          "hourlyMaximumMm": 19.5
+          "hourlyMaximumMm": 19.5,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-069.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-069.png"
         },
         {
           "leadHour": 70,
@@ -2999,7 +3311,9 @@
           "maximumMm": 311.2,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-070.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-070.bin",
-          "hourlyMaximumMm": 19.7
+          "hourlyMaximumMm": 19.7,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-070.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-070.png"
         },
         {
           "leadHour": 71,
@@ -3011,7 +3325,9 @@
           "maximumMm": 311.3,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-071.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-071.bin",
-          "hourlyMaximumMm": 23.3
+          "hourlyMaximumMm": 23.3,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-071.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-071.png"
         },
         {
           "leadHour": 72,
@@ -3023,7 +3339,9 @@
           "maximumMm": 312.7,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-072.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-072.bin",
-          "hourlyMaximumMm": 15.1
+          "hourlyMaximumMm": 15.1,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-072.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-072.png"
         },
         {
           "leadHour": 73,
@@ -3035,7 +3353,9 @@
           "maximumMm": 316.8,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-073.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-073.bin",
-          "hourlyMaximumMm": 23.7
+          "hourlyMaximumMm": 23.7,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-073.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-073.png"
         },
         {
           "leadHour": 74,
@@ -3047,7 +3367,9 @@
           "maximumMm": 317.0,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-074.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-074.bin",
-          "hourlyMaximumMm": 15.2
+          "hourlyMaximumMm": 15.2,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-074.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-074.png"
         },
         {
           "leadHour": 75,
@@ -3059,7 +3381,9 @@
           "maximumMm": 317.6,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-075.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-075.bin",
-          "hourlyMaximumMm": 12.3
+          "hourlyMaximumMm": 12.3,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-075.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-075.png"
         },
         {
           "leadHour": 76,
@@ -3071,7 +3395,9 @@
           "maximumMm": 319.0,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-076.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-076.bin",
-          "hourlyMaximumMm": 22.3
+          "hourlyMaximumMm": 22.3,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-076.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-076.png"
         },
         {
           "leadHour": 77,
@@ -3083,7 +3409,9 @@
           "maximumMm": 320.4,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-077.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-077.bin",
-          "hourlyMaximumMm": 16.4
+          "hourlyMaximumMm": 16.4,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-077.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-077.png"
         },
         {
           "leadHour": 78,
@@ -3095,7 +3423,9 @@
           "maximumMm": 320.6,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-078.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-078.bin",
-          "hourlyMaximumMm": 16.5
+          "hourlyMaximumMm": 16.5,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-078.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-078.png"
         },
         {
           "leadHour": 79,
@@ -3107,7 +3437,9 @@
           "maximumMm": 320.7,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-079.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-079.bin",
-          "hourlyMaximumMm": 16.5
+          "hourlyMaximumMm": 16.5,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-079.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-079.png"
         },
         {
           "leadHour": 80,
@@ -3119,7 +3451,9 @@
           "maximumMm": 321.1,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-080.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-080.bin",
-          "hourlyMaximumMm": 22.4
+          "hourlyMaximumMm": 22.4,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-080.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-080.png"
         },
         {
           "leadHour": 81,
@@ -3131,7 +3465,9 @@
           "maximumMm": 321.1,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-081.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-081.bin",
-          "hourlyMaximumMm": 15.5
+          "hourlyMaximumMm": 15.5,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-081.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-081.png"
         },
         {
           "leadHour": 82,
@@ -3143,7 +3479,9 @@
           "maximumMm": 321.1,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-082.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-082.bin",
-          "hourlyMaximumMm": 12.4
+          "hourlyMaximumMm": 12.4,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-082.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-082.png"
         },
         {
           "leadHour": 83,
@@ -3155,7 +3493,9 @@
           "maximumMm": 322.6,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-083.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-083.bin",
-          "hourlyMaximumMm": 14.1
+          "hourlyMaximumMm": 14.1,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-083.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-083.png"
         },
         {
           "leadHour": 84,
@@ -3167,7 +3507,9 @@
           "maximumMm": 322.6,
           "hourlyPath": "assets/models/ecmwf/frames-hourly/rain-084.png",
           "hourlyValuesPath": "assets/models/ecmwf/values-hourly/rain-084.bin",
-          "hourlyMaximumMm": 12.7
+          "hourlyMaximumMm": 12.7,
+          "smoothPath": "assets/models/ecmwf/frames-smooth/rain-084.png",
+          "smoothHourlyPath": "assets/models/ecmwf/frames-hourly-smooth/rain-084.png"
         }
       ]
     },
@@ -3188,7 +3530,9 @@
           "maximumMm": 0.0,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-000.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-000.bin",
-          "hourlyMaximumMm": 0.0
+          "hourlyMaximumMm": 0.0,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-000.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-000.png"
         },
         {
           "leadHour": 1,
@@ -3200,7 +3544,9 @@
           "maximumMm": 25.7,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-001.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-001.bin",
-          "hourlyMaximumMm": 25.7
+          "hourlyMaximumMm": 25.7,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-001.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-001.png"
         },
         {
           "leadHour": 2,
@@ -3212,7 +3558,9 @@
           "maximumMm": 50.4,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-002.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-002.bin",
-          "hourlyMaximumMm": 25.0
+          "hourlyMaximumMm": 25.0,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-002.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-002.png"
         },
         {
           "leadHour": 3,
@@ -3224,7 +3572,9 @@
           "maximumMm": 68.7,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-003.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-003.bin",
-          "hourlyMaximumMm": 23.2
+          "hourlyMaximumMm": 23.2,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-003.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-003.png"
         },
         {
           "leadHour": 4,
@@ -3236,7 +3586,9 @@
           "maximumMm": 76.7,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-004.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-004.bin",
-          "hourlyMaximumMm": 19.6
+          "hourlyMaximumMm": 19.6,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-004.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-004.png"
         },
         {
           "leadHour": 5,
@@ -3248,7 +3600,9 @@
           "maximumMm": 86.5,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-005.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-005.bin",
-          "hourlyMaximumMm": 17.6
+          "hourlyMaximumMm": 17.6,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-005.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-005.png"
         },
         {
           "leadHour": 6,
@@ -3260,7 +3614,9 @@
           "maximumMm": 104.3,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-006.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-006.bin",
-          "hourlyMaximumMm": 17.8
+          "hourlyMaximumMm": 17.8,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-006.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-006.png"
         },
         {
           "leadHour": 7,
@@ -3272,7 +3628,9 @@
           "maximumMm": 117.9,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-007.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-007.bin",
-          "hourlyMaximumMm": 18.4
+          "hourlyMaximumMm": 18.4,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-007.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-007.png"
         },
         {
           "leadHour": 8,
@@ -3284,7 +3642,9 @@
           "maximumMm": 136.1,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-008.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-008.bin",
-          "hourlyMaximumMm": 18.3
+          "hourlyMaximumMm": 18.3,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-008.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-008.png"
         },
         {
           "leadHour": 9,
@@ -3296,7 +3656,9 @@
           "maximumMm": 145.7,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-009.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-009.bin",
-          "hourlyMaximumMm": 17.2
+          "hourlyMaximumMm": 17.2,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-009.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-009.png"
         },
         {
           "leadHour": 10,
@@ -3308,7 +3670,9 @@
           "maximumMm": 158.9,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-010.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-010.bin",
-          "hourlyMaximumMm": 19.4
+          "hourlyMaximumMm": 19.4,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-010.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-010.png"
         },
         {
           "leadHour": 11,
@@ -3320,7 +3684,9 @@
           "maximumMm": 174.8,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-011.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-011.bin",
-          "hourlyMaximumMm": 32.9
+          "hourlyMaximumMm": 32.9,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-011.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-011.png"
         },
         {
           "leadHour": 12,
@@ -3332,7 +3698,9 @@
           "maximumMm": 191.5,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-012.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-012.bin",
-          "hourlyMaximumMm": 23.2
+          "hourlyMaximumMm": 23.2,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-012.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-012.png"
         },
         {
           "leadHour": 13,
@@ -3344,7 +3712,9 @@
           "maximumMm": 199.0,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-013.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-013.bin",
-          "hourlyMaximumMm": 24.1
+          "hourlyMaximumMm": 24.1,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-013.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-013.png"
         },
         {
           "leadHour": 14,
@@ -3356,7 +3726,9 @@
           "maximumMm": 201.6,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-014.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-014.bin",
-          "hourlyMaximumMm": 24.2
+          "hourlyMaximumMm": 24.2,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-014.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-014.png"
         },
         {
           "leadHour": 15,
@@ -3368,7 +3740,9 @@
           "maximumMm": 202.4,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-015.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-015.bin",
-          "hourlyMaximumMm": 31.0
+          "hourlyMaximumMm": 31.0,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-015.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-015.png"
         },
         {
           "leadHour": 16,
@@ -3380,7 +3754,9 @@
           "maximumMm": 204.9,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-016.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-016.bin",
-          "hourlyMaximumMm": 27.8
+          "hourlyMaximumMm": 27.8,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-016.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-016.png"
         },
         {
           "leadHour": 17,
@@ -3392,7 +3768,9 @@
           "maximumMm": 208.4,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-017.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-017.bin",
-          "hourlyMaximumMm": 29.0
+          "hourlyMaximumMm": 29.0,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-017.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-017.png"
         },
         {
           "leadHour": 18,
@@ -3404,7 +3782,9 @@
           "maximumMm": 217.3,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-018.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-018.bin",
-          "hourlyMaximumMm": 29.3
+          "hourlyMaximumMm": 29.3,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-018.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-018.png"
         },
         {
           "leadHour": 19,
@@ -3416,7 +3796,9 @@
           "maximumMm": 232.5,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-019.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-019.bin",
-          "hourlyMaximumMm": 25.0
+          "hourlyMaximumMm": 25.0,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-019.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-019.png"
         },
         {
           "leadHour": 20,
@@ -3428,7 +3810,9 @@
           "maximumMm": 242.6,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-020.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-020.bin",
-          "hourlyMaximumMm": 31.5
+          "hourlyMaximumMm": 31.5,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-020.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-020.png"
         },
         {
           "leadHour": 21,
@@ -3440,7 +3824,9 @@
           "maximumMm": 249.7,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-021.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-021.bin",
-          "hourlyMaximumMm": 39.2
+          "hourlyMaximumMm": 39.2,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-021.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-021.png"
         },
         {
           "leadHour": 22,
@@ -3452,7 +3838,9 @@
           "maximumMm": 254.4,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-022.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-022.bin",
-          "hourlyMaximumMm": 42.7
+          "hourlyMaximumMm": 42.7,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-022.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-022.png"
         },
         {
           "leadHour": 23,
@@ -3464,7 +3852,9 @@
           "maximumMm": 258.1,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-023.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-023.bin",
-          "hourlyMaximumMm": 28.8
+          "hourlyMaximumMm": 28.8,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-023.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-023.png"
         },
         {
           "leadHour": 24,
@@ -3476,7 +3866,9 @@
           "maximumMm": 260.0,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-024.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-024.bin",
-          "hourlyMaximumMm": 20.7
+          "hourlyMaximumMm": 20.7,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-024.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-024.png"
         },
         {
           "leadHour": 25,
@@ -3488,7 +3880,9 @@
           "maximumMm": 263.7,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-025.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-025.bin",
-          "hourlyMaximumMm": 14.9
+          "hourlyMaximumMm": 14.9,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-025.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-025.png"
         },
         {
           "leadHour": 26,
@@ -3500,7 +3894,9 @@
           "maximumMm": 267.4,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-026.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-026.bin",
-          "hourlyMaximumMm": 9.5
+          "hourlyMaximumMm": 9.5,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-026.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-026.png"
         },
         {
           "leadHour": 27,
@@ -3512,7 +3908,9 @@
           "maximumMm": 268.3,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-027.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-027.bin",
-          "hourlyMaximumMm": 6.3
+          "hourlyMaximumMm": 6.3,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-027.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-027.png"
         },
         {
           "leadHour": 28,
@@ -3524,7 +3922,9 @@
           "maximumMm": 268.5,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-028.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-028.bin",
-          "hourlyMaximumMm": 13.2
+          "hourlyMaximumMm": 13.2,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-028.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-028.png"
         },
         {
           "leadHour": 29,
@@ -3536,7 +3936,9 @@
           "maximumMm": 268.7,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-029.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-029.bin",
-          "hourlyMaximumMm": 25.1
+          "hourlyMaximumMm": 25.1,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-029.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-029.png"
         },
         {
           "leadHour": 30,
@@ -3548,7 +3950,9 @@
           "maximumMm": 269.0,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-030.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-030.bin",
-          "hourlyMaximumMm": 24.6
+          "hourlyMaximumMm": 24.6,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-030.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-030.png"
         },
         {
           "leadHour": 31,
@@ -3560,7 +3964,9 @@
           "maximumMm": 269.5,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-031.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-031.bin",
-          "hourlyMaximumMm": 18.8
+          "hourlyMaximumMm": 18.8,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-031.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-031.png"
         },
         {
           "leadHour": 32,
@@ -3572,7 +3978,9 @@
           "maximumMm": 269.9,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-032.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-032.bin",
-          "hourlyMaximumMm": 19.1
+          "hourlyMaximumMm": 19.1,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-032.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-032.png"
         },
         {
           "leadHour": 33,
@@ -3584,7 +3992,9 @@
           "maximumMm": 270.0,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-033.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-033.bin",
-          "hourlyMaximumMm": 19.0
+          "hourlyMaximumMm": 19.0,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-033.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-033.png"
         },
         {
           "leadHour": 34,
@@ -3596,7 +4006,9 @@
           "maximumMm": 270.0,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-034.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-034.bin",
-          "hourlyMaximumMm": 18.7
+          "hourlyMaximumMm": 18.7,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-034.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-034.png"
         },
         {
           "leadHour": 35,
@@ -3608,7 +4020,9 @@
           "maximumMm": 270.7,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-035.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-035.bin",
-          "hourlyMaximumMm": 19.0
+          "hourlyMaximumMm": 19.0,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-035.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-035.png"
         },
         {
           "leadHour": 36,
@@ -3620,7 +4034,9 @@
           "maximumMm": 270.9,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-036.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-036.bin",
-          "hourlyMaximumMm": 17.0
+          "hourlyMaximumMm": 17.0,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-036.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-036.png"
         },
         {
           "leadHour": 37,
@@ -3632,7 +4048,9 @@
           "maximumMm": 271.1,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-037.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-037.bin",
-          "hourlyMaximumMm": 28.5
+          "hourlyMaximumMm": 28.5,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-037.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-037.png"
         },
         {
           "leadHour": 38,
@@ -3644,7 +4062,9 @@
           "maximumMm": 271.2,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-038.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-038.bin",
-          "hourlyMaximumMm": 25.4
+          "hourlyMaximumMm": 25.4,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-038.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-038.png"
         },
         {
           "leadHour": 39,
@@ -3656,7 +4076,9 @@
           "maximumMm": 271.3,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-039.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-039.bin",
-          "hourlyMaximumMm": 26.2
+          "hourlyMaximumMm": 26.2,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-039.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-039.png"
         },
         {
           "leadHour": 40,
@@ -3668,7 +4090,9 @@
           "maximumMm": 271.3,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-040.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-040.bin",
-          "hourlyMaximumMm": 31.2
+          "hourlyMaximumMm": 31.2,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-040.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-040.png"
         },
         {
           "leadHour": 41,
@@ -3680,7 +4104,9 @@
           "maximumMm": 271.4,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-041.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-041.bin",
-          "hourlyMaximumMm": 38.9
+          "hourlyMaximumMm": 38.9,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-041.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-041.png"
         },
         {
           "leadHour": 42,
@@ -3692,7 +4118,9 @@
           "maximumMm": 277.7,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-042.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-042.bin",
-          "hourlyMaximumMm": 20.6
+          "hourlyMaximumMm": 20.6,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-042.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-042.png"
         },
         {
           "leadHour": 43,
@@ -3704,7 +4132,9 @@
           "maximumMm": 282.9,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-043.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-043.bin",
-          "hourlyMaximumMm": 19.9
+          "hourlyMaximumMm": 19.9,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-043.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-043.png"
         },
         {
           "leadHour": 44,
@@ -3716,7 +4146,9 @@
           "maximumMm": 284.7,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-044.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-044.bin",
-          "hourlyMaximumMm": 19.8
+          "hourlyMaximumMm": 19.8,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-044.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-044.png"
         },
         {
           "leadHour": 45,
@@ -3728,7 +4160,9 @@
           "maximumMm": 284.7,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-045.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-045.bin",
-          "hourlyMaximumMm": 27.6
+          "hourlyMaximumMm": 27.6,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-045.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-045.png"
         },
         {
           "leadHour": 46,
@@ -3740,7 +4174,9 @@
           "maximumMm": 284.7,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-046.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-046.bin",
-          "hourlyMaximumMm": 28.1
+          "hourlyMaximumMm": 28.1,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-046.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-046.png"
         },
         {
           "leadHour": 47,
@@ -3752,7 +4188,9 @@
           "maximumMm": 284.8,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-047.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-047.bin",
-          "hourlyMaximumMm": 33.8
+          "hourlyMaximumMm": 33.8,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-047.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-047.png"
         },
         {
           "leadHour": 48,
@@ -3764,7 +4202,9 @@
           "maximumMm": 284.8,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-048.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-048.bin",
-          "hourlyMaximumMm": 27.9
+          "hourlyMaximumMm": 27.9,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-048.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-048.png"
         },
         {
           "leadHour": 49,
@@ -3776,7 +4216,9 @@
           "maximumMm": 284.8,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-049.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-049.bin",
-          "hourlyMaximumMm": 18.2
+          "hourlyMaximumMm": 18.2,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-049.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-049.png"
         },
         {
           "leadHour": 50,
@@ -3788,7 +4230,9 @@
           "maximumMm": 284.8,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-050.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-050.bin",
-          "hourlyMaximumMm": 19.1
+          "hourlyMaximumMm": 19.1,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-050.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-050.png"
         },
         {
           "leadHour": 51,
@@ -3800,7 +4244,9 @@
           "maximumMm": 285.1,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-051.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-051.bin",
-          "hourlyMaximumMm": 22.9
+          "hourlyMaximumMm": 22.9,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-051.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-051.png"
         },
         {
           "leadHour": 52,
@@ -3812,7 +4258,9 @@
           "maximumMm": 290.2,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-052.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-052.bin",
-          "hourlyMaximumMm": 27.7
+          "hourlyMaximumMm": 27.7,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-052.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-052.png"
         },
         {
           "leadHour": 53,
@@ -3824,7 +4272,9 @@
           "maximumMm": 292.0,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-053.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-053.bin",
-          "hourlyMaximumMm": 28.5
+          "hourlyMaximumMm": 28.5,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-053.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-053.png"
         },
         {
           "leadHour": 54,
@@ -3836,7 +4286,9 @@
           "maximumMm": 292.2,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-054.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-054.bin",
-          "hourlyMaximumMm": 33.2
+          "hourlyMaximumMm": 33.2,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-054.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-054.png"
         },
         {
           "leadHour": 55,
@@ -3848,7 +4300,9 @@
           "maximumMm": 292.4,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-055.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-055.bin",
-          "hourlyMaximumMm": 37.6
+          "hourlyMaximumMm": 37.6,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-055.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-055.png"
         },
         {
           "leadHour": 56,
@@ -3860,7 +4314,9 @@
           "maximumMm": 292.8,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-056.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-056.bin",
-          "hourlyMaximumMm": 34.2
+          "hourlyMaximumMm": 34.2,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-056.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-056.png"
         },
         {
           "leadHour": 57,
@@ -3872,7 +4328,9 @@
           "maximumMm": 294.7,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-057.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-057.bin",
-          "hourlyMaximumMm": 33.9
+          "hourlyMaximumMm": 33.9,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-057.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-057.png"
         },
         {
           "leadHour": 58,
@@ -3884,7 +4342,9 @@
           "maximumMm": 294.9,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-058.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-058.bin",
-          "hourlyMaximumMm": 32.7
+          "hourlyMaximumMm": 32.7,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-058.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-058.png"
         },
         {
           "leadHour": 59,
@@ -3896,7 +4356,9 @@
           "maximumMm": 295.4,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-059.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-059.bin",
-          "hourlyMaximumMm": 22.7
+          "hourlyMaximumMm": 22.7,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-059.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-059.png"
         },
         {
           "leadHour": 60,
@@ -3908,7 +4370,9 @@
           "maximumMm": 295.7,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-060.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-060.bin",
-          "hourlyMaximumMm": 43.1
+          "hourlyMaximumMm": 43.1,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-060.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-060.png"
         },
         {
           "leadHour": 61,
@@ -3920,7 +4384,9 @@
           "maximumMm": 296.4,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-061.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-061.bin",
-          "hourlyMaximumMm": 32.0
+          "hourlyMaximumMm": 32.0,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-061.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-061.png"
         },
         {
           "leadHour": 62,
@@ -3932,7 +4398,9 @@
           "maximumMm": 296.6,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-062.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-062.bin",
-          "hourlyMaximumMm": 31.0
+          "hourlyMaximumMm": 31.0,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-062.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-062.png"
         },
         {
           "leadHour": 63,
@@ -3944,7 +4412,9 @@
           "maximumMm": 296.6,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-063.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-063.bin",
-          "hourlyMaximumMm": 19.7
+          "hourlyMaximumMm": 19.7,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-063.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-063.png"
         },
         {
           "leadHour": 64,
@@ -3956,7 +4426,9 @@
           "maximumMm": 296.6,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-064.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-064.bin",
-          "hourlyMaximumMm": 25.8
+          "hourlyMaximumMm": 25.8,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-064.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-064.png"
         },
         {
           "leadHour": 65,
@@ -3968,7 +4440,9 @@
           "maximumMm": 296.6,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-065.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-065.bin",
-          "hourlyMaximumMm": 19.0
+          "hourlyMaximumMm": 19.0,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-065.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-065.png"
         },
         {
           "leadHour": 66,
@@ -3980,7 +4454,9 @@
           "maximumMm": 297.7,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-066.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-066.bin",
-          "hourlyMaximumMm": 18.3
+          "hourlyMaximumMm": 18.3,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-066.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-066.png"
         },
         {
           "leadHour": 67,
@@ -3992,7 +4468,9 @@
           "maximumMm": 298.9,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-067.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-067.bin",
-          "hourlyMaximumMm": 23.5
+          "hourlyMaximumMm": 23.5,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-067.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-067.png"
         },
         {
           "leadHour": 68,
@@ -4004,7 +4482,9 @@
           "maximumMm": 304.1,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-068.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-068.bin",
-          "hourlyMaximumMm": 21.6
+          "hourlyMaximumMm": 21.6,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-068.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-068.png"
         },
         {
           "leadHour": 69,
@@ -4016,7 +4496,9 @@
           "maximumMm": 304.5,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-069.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-069.bin",
-          "hourlyMaximumMm": 15.3
+          "hourlyMaximumMm": 15.3,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-069.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-069.png"
         },
         {
           "leadHour": 70,
@@ -4028,7 +4510,9 @@
           "maximumMm": 305.0,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-070.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-070.bin",
-          "hourlyMaximumMm": 18.8
+          "hourlyMaximumMm": 18.8,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-070.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-070.png"
         },
         {
           "leadHour": 71,
@@ -4040,7 +4524,9 @@
           "maximumMm": 305.9,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-071.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-071.bin",
-          "hourlyMaximumMm": 25.9
+          "hourlyMaximumMm": 25.9,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-071.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-071.png"
         },
         {
           "leadHour": 72,
@@ -4052,7 +4538,9 @@
           "maximumMm": 306.4,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-072.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-072.bin",
-          "hourlyMaximumMm": 19.2
+          "hourlyMaximumMm": 19.2,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-072.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-072.png"
         },
         {
           "leadHour": 73,
@@ -4064,7 +4552,9 @@
           "maximumMm": 307.9,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-073.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-073.bin",
-          "hourlyMaximumMm": 15.3
+          "hourlyMaximumMm": 15.3,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-073.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-073.png"
         },
         {
           "leadHour": 74,
@@ -4076,7 +4566,9 @@
           "maximumMm": 310.3,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-074.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-074.bin",
-          "hourlyMaximumMm": 15.3
+          "hourlyMaximumMm": 15.3,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-074.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-074.png"
         },
         {
           "leadHour": 75,
@@ -4088,7 +4580,9 @@
           "maximumMm": 312.7,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-075.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-075.bin",
-          "hourlyMaximumMm": 16.7
+          "hourlyMaximumMm": 16.7,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-075.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-075.png"
         },
         {
           "leadHour": 76,
@@ -4100,7 +4594,9 @@
           "maximumMm": 312.8,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-076.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-076.bin",
-          "hourlyMaximumMm": 17.4
+          "hourlyMaximumMm": 17.4,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-076.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-076.png"
         },
         {
           "leadHour": 77,
@@ -4112,7 +4608,9 @@
           "maximumMm": 313.0,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-077.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-077.bin",
-          "hourlyMaximumMm": 19.0
+          "hourlyMaximumMm": 19.0,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-077.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-077.png"
         },
         {
           "leadHour": 78,
@@ -4124,7 +4622,9 @@
           "maximumMm": 313.0,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-078.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-078.bin",
-          "hourlyMaximumMm": 19.3
+          "hourlyMaximumMm": 19.3,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-078.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-078.png"
         },
         {
           "leadHour": 79,
@@ -4136,7 +4636,9 @@
           "maximumMm": 313.0,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-079.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-079.bin",
-          "hourlyMaximumMm": 16.3
+          "hourlyMaximumMm": 16.3,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-079.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-079.png"
         },
         {
           "leadHour": 80,
@@ -4148,7 +4650,9 @@
           "maximumMm": 313.0,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-080.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-080.bin",
-          "hourlyMaximumMm": 15.4
+          "hourlyMaximumMm": 15.4,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-080.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-080.png"
         },
         {
           "leadHour": 81,
@@ -4160,7 +4664,9 @@
           "maximumMm": 313.0,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-081.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-081.bin",
-          "hourlyMaximumMm": 11.5
+          "hourlyMaximumMm": 11.5,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-081.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-081.png"
         },
         {
           "leadHour": 82,
@@ -4172,7 +4678,9 @@
           "maximumMm": 315.1,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-082.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-082.bin",
-          "hourlyMaximumMm": 10.6
+          "hourlyMaximumMm": 10.6,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-082.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-082.png"
         },
         {
           "leadHour": 83,
@@ -4184,7 +4692,9 @@
           "maximumMm": 315.3,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-083.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-083.bin",
-          "hourlyMaximumMm": 12.3
+          "hourlyMaximumMm": 12.3,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-083.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-083.png"
         },
         {
           "leadHour": 84,
@@ -4196,7 +4706,9 @@
           "maximumMm": 315.3,
           "hourlyPath": "assets/models/ncep/frames-hourly/rain-084.png",
           "hourlyValuesPath": "assets/models/ncep/values-hourly/rain-084.bin",
-          "hourlyMaximumMm": 13.5
+          "hourlyMaximumMm": 13.5,
+          "smoothPath": "assets/models/ncep/frames-smooth/rain-084.png",
+          "smoothHourlyPath": "assets/models/ncep/frames-hourly-smooth/rain-084.png"
         }
       ]
     }
