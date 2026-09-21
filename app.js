@@ -1,4 +1,4 @@
-import * as maplibregl from "https://unpkg.com/maplibre-gl@6.9.0/dist/maplibre-gl.mjs";
+import * as maplibregl from "./vendor/maplibre-gl.mjs";
 
 const els = {
   loading: document.querySelector("#loading"),
@@ -26,6 +26,14 @@ const els = {
   legendTitle: document.querySelector("#legend-title"),
   legendTicks: document.querySelector("#legend-ticks"),
   colourRamp: document.querySelector(".colour-ramp"),
+  model: document.querySelector("#model-select"),
+  comparisonPanel: document.querySelector("#comparison-panel"),
+  closeComparison: document.querySelector("#close-comparison"),
+  comparisonHelp: document.querySelector("#comparison-help"),
+  comparisonContent: document.querySelector("#comparison-content"),
+  comparisonLocation: document.querySelector("#comparison-location"),
+  comparisonTime: document.querySelector("#comparison-time"),
+  comparisonBody: document.querySelector("#comparison-body"),
 };
 
 const state = {
@@ -36,8 +44,11 @@ const state = {
   activeLayer: "rain-a",
   opacity: 1,
   mapReady: false,
-  valuesCache: new Map(),
   variable: "cumulative",
+  model: "ukmo",
+  selectedCell: null,
+  comparisonRequest: 0,
+  popup: null,
 };
 
 const style = {
@@ -106,8 +117,16 @@ function variableConfig() {
   return state.forecast.variables[state.variable];
 }
 
-function frameImageUrl(frame) {
-  const path = frame[variableConfig().pathKey];
+function modelConfig(modelKey = state.model) {
+  return state.forecast.models[modelKey];
+}
+
+function currentFrames() {
+  return modelConfig().frames;
+}
+
+function frameImageUrl(frame, variableKey = state.variable) {
+  const path = frame[state.forecast.variables[variableKey].pathKey];
   return `${path}?v=${encodeURIComponent(state.forecast.dataVersion || "1")}`;
 }
 
@@ -124,8 +143,9 @@ function updateVariableInterface() {
 }
 
 function preload(index) {
+  const frames = currentFrames();
   for (let offset = 1; offset <= 3; offset += 1) {
-    const frame = state.forecast.frames[(index + offset) % state.forecast.frames.length];
+    const frame = frames[(index + offset) % frames.length];
     const image = new Image();
     image.src = frameImageUrl(frame);
   }
@@ -137,9 +157,10 @@ function setLayerOpacity(layerId, opacity) {
 
 async function showFrame(index, { immediate = false } = {}) {
   if (!state.forecast || !state.mapReady) return;
-  const total = state.forecast.frames.length;
+  const frames = currentFrames();
+  const total = frames.length;
   state.index = (index + total) % total;
-  const frame = state.forecast.frames[state.index];
+  const frame = frames[state.index];
   const inactive = state.activeLayer === "rain-a" ? "rain-b" : "rain-a";
   const inactiveSource = map.getSource(inactive);
 
@@ -163,6 +184,7 @@ async function showFrame(index, { immediate = false } = {}) {
   const progress = (state.index / (total - 1)) * 100;
   els.slider.style.setProperty("--progress", `${progress}%`);
   preload(state.index);
+  if (state.selectedCell) void refreshComparison();
 }
 
 function stopPlayback() {
@@ -221,19 +243,70 @@ function lonLatToNztm(lonDegrees, latDegrees) {
   return [easting, northing];
 }
 
-async function loadFrameValues(index) {
-  const cacheKey = `${state.variable}:${index}`;
-  if (state.valuesCache.has(cacheKey)) return state.valuesCache.get(cacheKey);
-  const path = state.forecast.frames[index][variableConfig().valuesPathKey];
-  const response = await fetch(`${path}?v=${encodeURIComponent(state.forecast.dataVersion || "1")}`);
+async function loadCellValue(index, row, column, modelKey = state.model, variableKey = state.variable) {
+  const frame = modelConfig(modelKey).frames[index];
+  const path = frame[state.forecast.variables[variableKey].valuesPathKey];
+  const cellIndex = row * state.forecast.grid.width + column;
+  const byteOffset = cellIndex * 2;
+  const response = await fetch(`${path}?v=${encodeURIComponent(state.forecast.dataVersion || "1")}`, {
+    headers: { Range: `bytes=${byteOffset}-${byteOffset + 1}` },
+  });
   if (!response.ok) throw new Error("Rainfall values could not be loaded");
-  const values = new Uint16Array(await response.arrayBuffer());
-  state.valuesCache.set(cacheKey, values);
-  if (state.valuesCache.size > 8) {
-    const firstKey = state.valuesCache.keys().next().value;
-    state.valuesCache.delete(firstKey);
+  const buffer = await response.arrayBuffer();
+  const encoded = response.status === 206
+    ? new DataView(buffer).getUint16(0, true)
+    : new DataView(buffer).getUint16(byteOffset, true);
+  return encoded === state.forecast.grid.noDataCode
+    ? null
+    : encoded / state.forecast.grid.valueScale;
+}
+
+function displayReading(value) {
+  return value === null ? "—" : `${value.toFixed(1)} mm`;
+}
+
+async function refreshComparison() {
+  if (!state.selectedCell) return;
+  const request = ++state.comparisonRequest;
+  const frameIndex = state.index;
+  const { row, column, lng, lat } = state.selectedCell;
+  const modelOrder = ["ukmo", "ncep", "ecmwf"];
+  let readings;
+  try {
+    readings = await Promise.all(modelOrder.map(async (modelKey) => {
+      const [hourlyValues, cumulativeValues] = await Promise.all([
+        loadCellValue(frameIndex, row, column, modelKey, "hourly"),
+        loadCellValue(frameIndex, row, column, modelKey, "cumulative"),
+      ]);
+      return {
+        modelKey,
+        hourly: hourlyValues,
+        cumulative: cumulativeValues,
+      };
+    }));
+  } catch (error) {
+    console.warn("Model comparison could not be updated", error);
+    return;
   }
-  return values;
+
+  if (request !== state.comparisonRequest || frameIndex !== state.index) return;
+  els.comparisonBody.replaceChildren(...readings.map((reading) => {
+    const rowElement = document.createElement("tr");
+    const modelCell = document.createElement("td");
+    const hourlyCell = document.createElement("td");
+    const cumulativeCell = document.createElement("td");
+    modelCell.textContent = modelConfig(reading.modelKey).label;
+    hourlyCell.textContent = displayReading(reading.hourly);
+    cumulativeCell.textContent = displayReading(reading.cumulative);
+    rowElement.append(modelCell, hourlyCell, cumulativeCell);
+    return rowElement;
+  }));
+  const frame = currentFrames()[frameIndex];
+  els.comparisonLocation.textContent = `${lat.toFixed(4)}, ${lng.toFixed(4)}`;
+  els.comparisonTime.textContent = `T+${frame.leadHour} · ${formatDate(frame.validTimeNz)}`;
+  els.comparisonHelp.hidden = true;
+  els.comparisonContent.classList.remove("hidden");
+  els.comparisonPanel.classList.remove("hidden");
 }
 
 function buildRainfallPopup(value, frame) {
@@ -257,13 +330,19 @@ map.on("click", async (event) => {
   const row = Math.floor((grid.yMax - northing) / grid.cellSize);
   if (column < 0 || row < 0 || column >= grid.width || row >= grid.height) return;
   const frameIndex = state.index;
-  const frame = state.forecast.frames[frameIndex];
+  const frame = currentFrames()[frameIndex];
+  state.selectedCell = {
+    row,
+    column,
+    lng: event.lngLat.lng,
+    lat: event.lngLat.lat,
+  };
+  void refreshComparison();
   try {
-    const values = await loadFrameValues(frameIndex);
-    const encoded = values[row * grid.width + column];
-    if (encoded === grid.noDataCode) return;
-    const value = encoded / grid.valueScale;
-    new maplibregl.Popup({ closeButton: true, maxWidth: "260px", offset: 12 })
+    const value = await loadCellValue(frameIndex, row, column);
+    if (value === null) return;
+    state.popup?.remove();
+    state.popup = new maplibregl.Popup({ closeButton: true, maxWidth: "260px", offset: 12 })
       .setLngLat(event.lngLat)
       .setDOMContent(buildRainfallPopup(value, frame))
       .addTo(map);
@@ -302,13 +381,19 @@ async function initialise() {
   const response = await fetch("assets/forecast.json");
   if (!response.ok) throw new Error("Forecast manifest could not be loaded");
   state.forecast = await response.json();
-  const requestedVariable = new URLSearchParams(window.location.search).get("variable");
+  const search = new URLSearchParams(window.location.search);
+  const requestedVariable = search.get("variable");
+  const requestedModel = search.get("model");
   if (requestedVariable && state.forecast.variables[requestedVariable]) state.variable = requestedVariable;
+  state.model = requestedModel && state.forecast.models[requestedModel]
+    ? requestedModel
+    : state.forecast.defaultModel;
   els.variable.value = state.variable;
+  els.model.value = state.model;
   updateVariableInterface();
-  els.slider.max = String(state.forecast.frames.length - 1);
-  els.timelineStart.textContent = formatDate(state.forecast.frames[0].validTimeNz, true);
-  els.timelineEnd.textContent = formatDate(state.forecast.frames.at(-1).validTimeNz, true);
+  els.slider.max = String(currentFrames().length - 1);
+  els.timelineStart.textContent = formatDate(currentFrames()[0].validTimeNz, true);
+  els.timelineEnd.textContent = formatDate(currentFrames().at(-1).validTimeNz, true);
 
   await new Promise((resolve) => map.once("load", resolve));
   state.mapReady = true;
@@ -316,7 +401,7 @@ async function initialise() {
   for (const id of ["rain-a", "rain-b"]) {
     map.addSource(id, {
       type: "image",
-      url: frameImageUrl(state.forecast.frames[0]),
+      url: frameImageUrl(currentFrames()[0]),
       coordinates: state.forecast.coordinates,
     });
     map.addLayer({
@@ -347,8 +432,18 @@ els.speed.addEventListener("change", () => { if (state.playing) startPlayback();
 els.variable.addEventListener("change", async (event) => {
   stopPlayback();
   state.variable = event.target.value;
+  state.popup?.remove();
   updateVariableInterface();
   await showFrame(state.index, { immediate: true });
+});
+els.model.addEventListener("change", async (event) => {
+  stopPlayback();
+  state.model = event.target.value;
+  state.popup?.remove();
+  els.slider.max = String(currentFrames().length - 1);
+  els.timelineStart.textContent = formatDate(currentFrames()[0].validTimeNz, true);
+  els.timelineEnd.textContent = formatDate(currentFrames().at(-1).validTimeNz, true);
+  await showFrame(Math.min(state.index, currentFrames().length - 1), { immediate: true });
 });
 els.layersButton.addEventListener("click", () => {
   const hidden = els.layersPanel.classList.toggle("hidden");
@@ -357,6 +452,9 @@ els.layersButton.addEventListener("click", () => {
 els.closeLayers.addEventListener("click", () => {
   els.layersPanel.classList.add("hidden");
   els.layersButton.setAttribute("aria-expanded", "false");
+});
+els.closeComparison.addEventListener("click", () => {
+  els.comparisonPanel.classList.add("hidden");
 });
 els.rainToggle.addEventListener("change", (event) => {
   setVisibility("rain-a", event.target.checked);
@@ -410,7 +508,12 @@ function registerForecastTools() {
       }
       stopPlayback();
       await showFrame(input.leadHour);
-      return { leadHour: state.index, validTimeNz: state.forecast.frames[state.index].validTimeNz };
+      return {
+        leadHour: state.index,
+        validTimeNz: currentFrames()[state.index].validTimeNz,
+        model: modelConfig().label,
+        variable: variableConfig().label,
+      };
     },
   }, { signal: lifecycle.signal })).catch((error) => console.warn("Forecast tool registration failed", error));
 }
