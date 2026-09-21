@@ -1,6 +1,6 @@
 {
   "title": "Cumulative forecast rainfall",
-  "model": "WRF prototype",
+  "model": "UKMO",
   "forecastRunUtc": "2026-04-11T12:00:00Z",
   "forecastRunNz": "2026-04-12T00:00:00+12:00",
   "timeStatus": "Hr1 treated as T+0 pending confirmation",
