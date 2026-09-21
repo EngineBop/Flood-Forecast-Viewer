@@ -1,6 +1,6 @@
 # Flood Forecast Viewer
 
-Interactive proof-of-concept viewer for Bay of Plenty cumulative forecast rainfall data.
+Interactive proof-of-concept viewer for Bay of Plenty UKMO forecast rainfall data.
 
 ## Prototype status
 
@@ -9,10 +9,11 @@ This viewer is an early proof of concept. The display and click-value mechanics 
 ## Current prototype
 
 - 85 cumulative rainfall forecast frames
+- Hourly rainfall derived from consecutive cumulative frames
+- Variable selector with separate legends and click readings
 - NZST valid times
 - Animated timeline and playback controls
 - Click-to-read rainfall values
 - Surface drainage catchments and place labels
 - Imagery and streets basemaps
 - Rainfall opacity control
-
